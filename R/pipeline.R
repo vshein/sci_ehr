@@ -142,23 +142,27 @@ CREATE TABLE {target_schema}.{target_table_name} AS
 #'   \item Run handcrafted flat / duration SQL
 #' }
 #'
-#' @param src_name       Source identifier, e.g. \code{"miii_demo"},
+#' @param src_name            Source identifier, e.g. \code{"miii_demo"},
 #'   \code{"miiv_demo"}, \code{"eicu_demo"}.
-#' @param db_name        PostgreSQL database name.
-#' @param base_dir       User project root directory.
-#' @param icds_scid_path Path to CSV with SCI ICD codes (column \code{icd_code}).
-#' @param icds_inj_path  Path to CSV with injury ICD codes.
-#' @param concept_config_name  Filename of the concept config CSV inside
-#'   \code{inst/config/}.
+#' @param db_name             PostgreSQL database name.
+#' @param base_dir            User project root directory.
+#' @param icds_scid_path      Path to CSV with SCI ICD codes (column \code{icd_code}).
+#' @param icds_inj_path       Path to CSV with injury ICD codes.
+#' @param concept_config_name Filename of the concept config CSV.  Resolved as:
+#'   user \code{base_dir/config/<name>} > package default.
+#' @param concept_config_path Optional explicit full path to a concept config CSV.
+#'   Overrides \code{concept_config_name} resolution entirely.
 #' @param host PostgreSQL host.
 #' @param port PostgreSQL port.
 #' @export
 run_source_pipeline <- function(src_name, db_name, base_dir,
                                 icds_scid_path, icds_inj_path,
                                 concept_config_name = "concept_config.csv",
+                                concept_config_path = NULL,
                                 host = "localhost", port = 5432) {
   paths        <- make_project_paths(base_dir, src_name,
-                                     concept_config_name = concept_config_name)
+                                     concept_config_name = concept_config_name,
+                                     concept_config_path = concept_config_path)
   schema_names <- src_schema_names(src_name)
   icu_stay_col <- get_icu_stay_col(src_name)
 
@@ -236,7 +240,10 @@ run_source_pipeline <- function(src_name, db_name, base_dir,
 #' @param ts_table_name    Name for the TS output table.
 #' @param flat_table_name  Name for the flat output table.
 #' @param dur_table_name   Name for the duration output table (future use).
-#' @param concept_config_name Filename of the concept config CSV.
+#' @param concept_config_name Filename of the concept config CSV.  Resolved as:
+#'   user \code{base_dir/config/<name>} > package default.
+#' @param concept_config_path Optional explicit full path to a concept config CSV.
+#'   Overrides \code{concept_config_name} resolution entirely.
 #' @param host PostgreSQL host.
 #' @param port PostgreSQL port.
 #' @export
@@ -249,9 +256,11 @@ run_harmonized_tables <- function(src_name, db_name, base_dir,
                                   flat_table_name   = "flat_tab",
                                   dur_table_name    = "dur_tab",
                                   concept_config_name = "concept_config.csv",
+                                  concept_config_path = NULL,
                                   host = "localhost", port = 5432) {
   paths        <- make_project_paths(base_dir, src_name,
-                                     concept_config_name = concept_config_name)
+                                     concept_config_name = concept_config_name,
+                                     concept_config_path = concept_config_path)
   schema_names <- src_schema_names(src_name)
   icu_stay_col <- get_icu_stay_col(src_name)
 

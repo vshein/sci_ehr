@@ -1,94 +1,115 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 231" width="200" height="231">
   <defs>
-    <linearGradient id="hexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a3a5c;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0d2137;stop-opacity:1" />
+    <linearGradient id="hexGrad" x1="0%" y1="0%" x2="60%" y2="100%">
+      <stop offset="0%" style="stop-color:#16304f"/>
+      <stop offset="100%" style="stop-color:#091520"/>
     </linearGradient>
-    <linearGradient id="spineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#4ec9e1;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#29a8c4;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#1d8ba3;stop-opacity:1" />
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5dd6ee"/>
+      <stop offset="100%" style="stop-color:#1b9ab8"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    <linearGradient id="cordGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#a0ecf8"/>
+      <stop offset="100%" style="stop-color:#3cc0da"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <clipPath id="hexClip">
-      <polygon points="100,4 196,54 196,177 100,227 4,177 4,54"/>
+      <polygon points="100,5 195,55 195,176 100,226 5,176 5,55"/>
     </clipPath>
   </defs>
 
-  <!-- Hex border / shadow -->
-  <polygon points="100,2 198,53 198,179 100,229 2,179 2,53"
-           fill="#0a1e30" opacity="0.5"/>
+  <!-- Drop shadow -->
+  <polygon points="100,3 197,54 197,178 100,228 3,178 3,54"
+           fill="#000" opacity="0.35"/>
 
-  <!-- Main hex fill -->
-  <polygon points="100,4 196,54 196,177 100,227 4,177 4,54"
+  <!-- Main hex -->
+  <polygon points="100,5 195,55 195,176 100,226 5,176 5,55"
            fill="url(#hexGrad)"/>
 
-  <!-- Hex border highlight -->
-  <polygon points="100,4 196,54 196,177 100,227 4,177 4,54"
-           fill="none" stroke="#4ec9e1" stroke-width="3" opacity="0.8"/>
+  <!-- Hex border -->
+  <polygon points="100,5 195,55 195,176 100,226 5,176 5,55"
+           fill="none" stroke="#3cc0da" stroke-width="2.5"/>
 
-  <!-- ECG / heartbeat line in background -->
-  <g clip-path="url(#hexClip)" opacity="0.12">
-    <polyline points="0,115 30,115 38,115 44,85 50,145 56,95 62,115 90,115 200,115"
-              fill="none" stroke="#4ec9e1" stroke-width="3"/>
+  <!-- Subtle grid lines in background -->
+  <g clip-path="url(#hexClip)" opacity="0.07" stroke="#4ec9e1" stroke-width="0.8">
+    <line x1="0"   y1="70"  x2="200" y2="70"/>
+    <line x1="0"   y1="100" x2="200" y2="100"/>
+    <line x1="0"   y1="130" x2="200" y2="130"/>
+    <line x1="0"   y1="160" x2="200" y2="160"/>
+    <line x1="65"  y1="0"   x2="65"  y2="231"/>
+    <line x1="100" y1="0"   x2="100" y2="231"/>
+    <line x1="135" y1="0"   x2="135" y2="231"/>
   </g>
 
-  <!-- Spine column — vertebrae stack -->
-  <g transform="translate(100, 68)" filter="url(#glow)">
-    <!-- Vertebra 1 -->
-    <rect x="-14" y="0"  width="28" height="10" rx="3" fill="url(#spineGrad)"/>
-    <rect x="-6"  y="10" width="12" height="5"  rx="1" fill="#29a8c4" opacity="0.7"/>
-    <!-- Vertebra 2 -->
-    <rect x="-14" y="15" width="28" height="10" rx="3" fill="url(#spineGrad)"/>
-    <rect x="-6"  y="25" width="12" height="5"  rx="1" fill="#29a8c4" opacity="0.7"/>
-    <!-- Vertebra 3 -->
-    <rect x="-14" y="30" width="28" height="10" rx="3" fill="url(#spineGrad)"/>
-    <rect x="-6"  y="40" width="12" height="5"  rx="1" fill="#29a8c4" opacity="0.7"/>
-    <!-- Vertebra 4 -->
-    <rect x="-14" y="45" width="28" height="10" rx="3" fill="url(#spineGrad)"/>
-    <rect x="-6"  y="55" width="12" height="5"  rx="1" fill="#29a8c4" opacity="0.7"/>
-    <!-- Vertebra 5 -->
-    <rect x="-14" y="60" width="28" height="10" rx="3" fill="url(#spineGrad)"/>
+  <!-- ── SPINE ── centred at x=100, vertebrae at y=60..148 -->
+  <g filter="url(#glow)">
 
-    <!-- Side nerves left -->
-    <line x1="-14" y1="5"  x2="-28" y2="2"  stroke="#4ec9e1" stroke-width="1.5" opacity="0.7"/>
-    <line x1="-14" y1="20" x2="-30" y2="18" stroke="#4ec9e1" stroke-width="1.5" opacity="0.7"/>
-    <line x1="-14" y1="35" x2="-30" y2="34" stroke="#4ec9e1" stroke-width="1.5" opacity="0.6"/>
-    <line x1="-14" y1="50" x2="-28" y2="50" stroke="#4ec9e1" stroke-width="1.5" opacity="0.5"/>
-    <line x1="-14" y1="65" x2="-26" y2="66" stroke="#4ec9e1" stroke-width="1.5" opacity="0.4"/>
+    <!-- Spinal cord channel (central canal line) -->
+    <line x1="100" y1="58" x2="100" y2="152"
+          stroke="#a0ecf8" stroke-width="2" opacity="0.6"/>
 
-    <!-- Side nerves right -->
-    <line x1="14" y1="5"  x2="28" y2="2"  stroke="#4ec9e1" stroke-width="1.5" opacity="0.7"/>
-    <line x1="14" y1="20" x2="30" y2="18" stroke="#4ec9e1" stroke-width="1.5" opacity="0.7"/>
-    <line x1="14" y1="35" x2="30" y2="34" stroke="#4ec9e1" stroke-width="1.5" opacity="0.6"/>
-    <line x1="14" y1="50" x2="28" y2="50" stroke="#4ec9e1" stroke-width="1.5" opacity="0.5"/>
-    <line x1="14" y1="65" x2="26" y2="66" stroke="#4ec9e1" stroke-width="1.5" opacity="0.4"/>
+    <!-- ── Vertebra 1 (top) ── -->
+    <!-- body (oval) -->
+    <ellipse cx="100" cy="68"  rx="13" ry="7"  fill="url(#bodyGrad)"/>
+    <!-- spinous process up -->
+    <polygon points="100,57 104,63 96,63" fill="#3cc0da" opacity="0.85"/>
+    <!-- nerve roots -->
+    <path d="M87,68 Q74,65 68,60" stroke="#4ec9e1" stroke-width="1.8" fill="none" opacity="0.8"/>
+    <path d="M113,68 Q126,65 132,60" stroke="#4ec9e1" stroke-width="1.8" fill="none" opacity="0.8"/>
+
+    <!-- disc 1-2 -->
+    <rect x="92" y="75" width="16" height="4" rx="2" fill="#1b9ab8" opacity="0.5"/>
+
+    <!-- ── Vertebra 2 ── -->
+    <ellipse cx="100" cy="87"  rx="13" ry="7"  fill="url(#bodyGrad)"/>
+    <path d="M87,87 Q73,84 66,80" stroke="#4ec9e1" stroke-width="1.8" fill="none" opacity="0.75"/>
+    <path d="M113,87 Q127,84 134,80" stroke="#4ec9e1" stroke-width="1.8" fill="none" opacity="0.75"/>
+
+    <!-- disc 2-3 -->
+    <rect x="92" y="94" width="16" height="4" rx="2" fill="#1b9ab8" opacity="0.5"/>
+
+    <!-- ── Vertebra 3 ── -->
+    <ellipse cx="100" cy="106" rx="13" ry="7"  fill="url(#bodyGrad)"/>
+    <path d="M87,106 Q73,104 66,100" stroke="#4ec9e1" stroke-width="1.8" fill="none" opacity="0.7"/>
+    <path d="M113,106 Q127,104 134,100" stroke="#4ec9e1" stroke-width="1.8" fill="none" opacity="0.7"/>
+
+    <!-- disc 3-4 -->
+    <rect x="92" y="113" width="16" height="4" rx="2" fill="#1b9ab8" opacity="0.5"/>
+
+    <!-- ── Vertebra 4 ── -->
+    <ellipse cx="100" cy="125" rx="13" ry="7"  fill="url(#bodyGrad)"/>
+    <path d="M87,125 Q74,124 68,120" stroke="#4ec9e1" stroke-width="1.6" fill="none" opacity="0.6"/>
+    <path d="M113,125 Q126,124 132,120" stroke="#4ec9e1" stroke-width="1.6" fill="none" opacity="0.6"/>
+
+    <!-- disc 4-5 -->
+    <rect x="92" y="132" width="16" height="4" rx="2" fill="#1b9ab8" opacity="0.5"/>
+
+    <!-- ── Vertebra 5 (bottom) ── -->
+    <ellipse cx="100" cy="144" rx="13" ry="7"  fill="url(#bodyGrad)"/>
+    <!-- spinous process down -->
+    <polygon points="100,155 104,149 96,149" fill="#3cc0da" opacity="0.75"/>
+    <path d="M87,144 Q75,144 70,140" stroke="#4ec9e1" stroke-width="1.4" fill="none" opacity="0.5"/>
+    <path d="M113,144 Q125,144 130,140" stroke="#4ec9e1" stroke-width="1.4" fill="none" opacity="0.5"/>
+
   </g>
 
   <!-- Package name -->
-  <text x="100" y="162"
+  <text x="100" y="174"
         font-family="'DejaVu Sans', 'Liberation Sans', Arial, sans-serif"
-        font-size="22" font-weight="700" font-style="italic"
-        text-anchor="middle" fill="#ffffff" letter-spacing="1">
-    sci_ehr
-  </text>
+        font-size="21" font-weight="700" font-style="italic"
+        text-anchor="middle" fill="#ffffff" letter-spacing="1">sci_ehr</text>
 
   <!-- Tagline -->
-  <text x="100" y="178"
+  <text x="100" y="188"
         font-family="'DejaVu Sans', 'Liberation Sans', Arial, sans-serif"
-        font-size="7.5" font-weight="400"
-        text-anchor="middle" fill="#7dd4e8" letter-spacing="0.5" opacity="0.9">
-    ICU EHR · SCI Research
-  </text>
+        font-size="7.2" font-weight="400"
+        text-anchor="middle" fill="#6dcfe6" letter-spacing="0.8">ICU EHR · SCI Research</text>
 
-  <!-- Bottom hex accent dots -->
-  <circle cx="72"  cy="208" r="2.5" fill="#4ec9e1" opacity="0.6"/>
-  <circle cx="100" cy="214" r="2.5" fill="#4ec9e1" opacity="0.6"/>
-  <circle cx="128" cy="208" r="2.5" fill="#4ec9e1" opacity="0.6"/>
+  <!-- Bottom accent dots -->
+  <circle cx="76"  cy="210" r="2.2" fill="#3cc0da" opacity="0.55"/>
+  <circle cx="100" cy="215" r="2.2" fill="#3cc0da" opacity="0.55"/>
+  <circle cx="124" cy="210" r="2.2" fill="#3cc0da" opacity="0.55"/>
 </svg>

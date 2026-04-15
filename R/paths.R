@@ -8,15 +8,28 @@
 #' \code{base_dir}.  SQL templates and bundled config files are read from the
 #' installed package via \code{system.file()}.
 #'
+#' Concept config resolution follows a ricu-style priority chain:
+#' \enumerate{
+#'   \item \code{concept_config_path} argument — explicit full path, highest priority.
+#'   \item \code{base_dir/config/<concept_config_name>} — user's project config.
+#'   \item Package-bundled \code{inst/config/<concept_config_name>} — the default.
+#' }
+#'
 #' @param base_dir Root directory for this user's data files.
 #' @param src_name Source identifier, e.g. \code{"miii_demo"}, \code{"miiv_demo"},
 #'   or \code{"eicu_demo"}.
-#' @param concept_config_name File name of the concept config CSV inside
-#'   \code{inst/config/}.  Defaults to \code{"concept_config.csv"}.
-#' @return A named list of paths.
+#' @param concept_config_name File name of the concept config CSV.  Looked up
+#'   first in \code{base_dir/config/}, then in the package \code{inst/config/}.
+#'   Defaults to \code{"concept_config.csv"}.
+#' @param concept_config_path Optional explicit path to a concept config CSV.
+#'   Overrides both the user and package locations when supplied.
+#' @return A named list of paths, including \code{concept_config_csv} (resolved
+#'   path) and \code{concept_config_source} (\code{"user"}, \code{"package"},
+#'   or \code{"explicit"}).
 #' @export
 make_project_paths <- function(base_dir, src_name,
-                               concept_config_name = "concept_config.csv") {
+                               concept_config_name = "concept_config.csv",
+                               concept_config_path = NULL) {
   pkg      <- "sciehr"
   pkg_sql  <- system.file("sql", src_name, package = pkg)
   pkg_cfg  <- system.file("config",        package = pkg)
@@ -27,6 +40,24 @@ make_project_paths <- function(base_dir, src_name,
   }
   if (!nzchar(pkg_cfg)) {
     pkg_cfg <- file.path(find.package(pkg, quiet = TRUE), "inst", "config")
+  }
+
+  # ------------------------------------------------------------------
+  # Concept config: explicit > user project > package default
+  # ------------------------------------------------------------------
+  user_concept_cfg <- file.path(base_dir, "config", concept_config_name)
+  pkg_concept_cfg  <- file.path(pkg_cfg,  concept_config_name)
+
+  if (!is.null(concept_config_path)) {
+    resolved_concept_cfg    <- concept_config_path
+    concept_config_source   <- "explicit"
+  } else if (file.exists(user_concept_cfg)) {
+    resolved_concept_cfg    <- user_concept_cfg
+    concept_config_source   <- "user"
+    message("Using user concept config: ", user_concept_cfg)
+  } else {
+    resolved_concept_cfg    <- pkg_concept_cfg
+    concept_config_source   <- "package"
   }
 
   list(
@@ -48,7 +79,10 @@ make_project_paths <- function(base_dir, src_name,
     # ---- package config ----
     config_dir         = pkg_cfg,
     data_config_json   = file.path(pkg_cfg, "data-sources.json"),
-    concept_config_csv = file.path(pkg_cfg, concept_config_name),
+
+    # ---- concept config (resolved: explicit > user > package) ----
+    concept_config_csv    = resolved_concept_cfg,
+    concept_config_source = concept_config_source,
 
     # ---- user-managed credentials (never in the package) ----
     credentials_json   = file.path(base_dir, "config", "config_pass.json")
