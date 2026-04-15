@@ -1,0 +1,73 @@
+DROP TABLE IF EXISTS eicu_demo_coh_concepts.wbc_tested;
+CREATE TABLE eicu_demo_coh_concepts.wbc_tested AS
+SELECT
+    cw.uniquepid,
+    cw.patienthealthsystemstayid,
+    cw.patientunitstayid,
+
+
+    cw.icu_intime,
+
+    src.labresultrevisedoffset,
+
+    (src.labresultrevisedoffset - cw.icu_intime) AS time_since_hadm_min,
+
+    CAST(src.labresult AS NUMERIC) AS value,
+
+    'K/uL' AS unit,
+
+    src.labresult AS value_raw,
+    src.labmeasurenameinterface AS unit_raw,
+
+    src.labname AS source_itemid,
+
+    NULL AS source_label,
+
+    'lab' AS source_table,
+    'eicu_demo_coh' AS source_dataset
+
+FROM eicu_demo_coh.visit_windows cw
+
+JOIN eicu_demo_coh.lab src
+    ON cw.patientunitstayid = src.patientunitstayid
+
+
+
+WHERE LOWER(src.labname) ~ 'WBC x 1000'
+AND src.labresult IS NOT NULL
+UNION ALL
+SELECT
+    cw.uniquepid,
+    cw.patienthealthsystemstayid,
+    cw.patientunitstayid,
+
+
+    cw.icu_intime,
+
+    src.labresultrevisedoffset,
+
+    (src.labresultrevisedoffset - cw.icu_intime) AS time_since_hadm_min,
+
+    CAST(src.labresult AS NUMERIC) AS value,
+
+    'K/uL' AS unit,
+
+    src.labresult AS value_raw,
+    src.labmeasurenameinterface AS unit_raw,
+
+    src.labname AS source_itemid,
+
+    NULL AS source_label,
+
+    'lab' AS source_table,
+    'eicu_demo_coh' AS source_dataset
+
+FROM eicu_demo_coh.visit_windows cw
+
+JOIN eicu_demo_coh.lab src
+    ON cw.patientunitstayid = src.patientunitstayid
+
+
+
+WHERE LOWER(src.labname) ~ 'WBC x 1000'
+AND src.labresult IS NOT NULL;

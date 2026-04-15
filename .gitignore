@@ -1,0 +1,25 @@
+# R
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj.user
+
+# Sensitive — NEVER commit credentials
+config/config_pass.json
+
+# Large data files
+data/
+*.fst
+*.parquet
+*.csv.gz
+df_mapped.csv
+
+# Generated SQL output
+sql_output/
+
+# R package build artifacts
+*.tar.gz
+*.Rcheck/
+
+# macOS
+.DS_Store

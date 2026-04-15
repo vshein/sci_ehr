@@ -1,0 +1,638 @@
+"concept_name","category","unit","min_value","max_value","description","omop_id","source","table_name","sub_var","val_var","unit_var","index_var","class","check","match_value","method","conversion","reference","typ","clip_rule","dict"
+"hr","vitals","bpm",0,300,"heart rate",4239408,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"6640","id","none","ricu","ts",0,NA
+"hr","vitals","bpm",0,300,"heart rate",4239408,"eicu_coh","vitalperiodic",NA,"heartrate",NA,"observationoffset","col_itm",NA,NA,NA,"none","ricu","ts",0,NA
+"hr","vitals","bpm",0,300,"heart rate",4239408,"eicu_demo_coh","vitalperiodic",NA,"heartrate",NA,"observationoffset","col_itm",NA,NA,NA,"none","ricu","ts",0,NA
+"hr","vitals","bpm",0,300,"heart rate",4239408,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"200","id","none","ricu","ts",0,NA
+"hr","vitals","bpm",0,300,"heart rate",4239408,"chartevents","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"220045","id","none","ricu","ts",0,"d_items"
+"hr","vitals","bpm",0,300,"heart rate",4239408,"mimic_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"211|220045","id","none","ricu","ts",0,"d_items"
+"hr","vitals","bpm",0,300,"heart rate",4239408,"mimic_demo_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"211|220045","id","none","ricu","ts",0,"d_items"
+"hr","vitals","bpm",0,300,"heart rate",4239408,"data_float_h","data_float_h","DataID",NA,NA,NA,"rgx_itm",NA,"708","id","none","ricu","ts",0,NA
+"sbp","vitals","mmHg",0,300,"systolic blood pressure",4152194,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"6641","id","none","ricu","ts",0,NA
+"sbp","vitals","mmHg",0,300,"systolic blood pressure",4152194,"eicu_coh","vitalperiodic",NA,"systemicsystolic",NA,"observationoffset","col_itm",NA,NA,NA,"none","ricu","ts",0,NA
+"sbp","vitals","mmHg",0,300,"systolic blood pressure",4152194,"eicu_demo_coh","vitalperiodic",NA,"systemicsystolic",NA,"observationoffset","col_itm",NA,NA,NA,"none","ricu","ts",0,NA
+"sbp","vitals","mmHg",0,300,"systolic blood pressure",4152194,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"100","id","none","ricu","ts",0,NA
+"sbp","vitals","mmHg",0,300,"systolic blood pressure",4152194,"chartevents","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"220050|220179","id","none","ricu","ts",0,"d_items"
+"sbp","vitals","mmHg",0,300,"systolic blood pressure",4152194,"mimic_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"51|455|6701|220050|220179","id","none","ricu","ts",0,"d_items"
+"sbp","vitals","mmHg",0,300,"systolic blood pressure",4152194,"mimic_demo_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"51|455|6701|220050|220179","id","none","ricu","ts",0,"d_items"
+"sbp","vitals","mmHg",0,300,"systolic blood pressure",4152194,"data_float_h","data_float_h","DataID",NA,NA,NA,"rgx_itm",NA,"701|704","id","none","ricu","ts",0,NA
+"dbp","vitals","mmHg",0,200,"diastolic blood pressure",4154790,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"6643","id","none","ricu","ts",0,NA
+"dbp","vitals","mmHg",0,200,"diastolic blood pressure",4154790,"eicu_coh","vitalperiodic",NA,"systemicdiastolic",NA,"observationoffset","col_itm",NA,NA,NA,"none","ricu","ts",0,NA
+"dbp","vitals","mmHg",0,200,"diastolic blood pressure",4154790,"eicu_demo_coh","vitalperiodic",NA,"systemicdiastolic",NA,"observationoffset","col_itm",NA,NA,NA,"none","ricu","ts",0,NA
+"dbp","vitals","mmHg",0,200,"diastolic blood pressure",4154790,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"120","id","none","ricu","ts",0,NA
+"dbp","vitals","mmHg",0,200,"diastolic blood pressure",4154790,"chartevents","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"220051|220180","id","none","ricu","ts",0,"d_items"
+"dbp","vitals","mmHg",0,200,"diastolic blood pressure",4154790,"mimic_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"8368|8441|8555|220051|220180","id","none","ricu","ts",0,"d_items"
+"dbp","vitals","mmHg",0,200,"diastolic blood pressure",4154790,"mimic_demo_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"8368|8441|8555|220051|220180","id","none","ricu","ts",0,"d_items"
+"dbp","vitals","mmHg",0,200,"diastolic blood pressure",4154790,"data_float_h","data_float_h","DataID",NA,NA,NA,"rgx_itm",NA,"702|705","id","none","ricu","ts",0,NA
+"map","vitals","mmHg",0,250,"mean arterial pressure",4239021,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"6642","id","none","ricu","ts",0,NA
+"map","vitals","mmHg",0,250,"mean arterial pressure",4239021,"eicu_coh","vitalperiodic",NA,"systemicmean",NA,"observationoffset","col_itm",NA,NA,NA,"none","ricu","ts",0,NA
+"map","vitals","mmHg",0,250,"mean arterial pressure",4239021,"eicu_coh","vitalaperiodic",NA,"noninvasivemean",NA,"observationoffset","col_itm",NA,NA,NA,"none","ricu","ts",0,NA
+"map","vitals","mmHg",0,250,"mean arterial pressure",4239021,"eicu_demo_coh","vitalperiodic",NA,"systemicmean",NA,"observationoffset","col_itm",NA,NA,NA,"none","ricu","ts",0,NA
+"map","vitals","mmHg",0,250,"mean arterial pressure",4239021,"eicu_demo_coh","vitalaperiodic",NA,"noninvasivemean",NA,"observationoffset","col_itm",NA,NA,NA,"none","ricu","ts",0,NA
+"map","vitals","mmHg",0,250,"mean arterial pressure",4239021,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"110|610","id","none","ricu","ts",0,NA
+"map","vitals","mmHg",0,250,"mean arterial pressure",4239021,"chartevents","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"220052|220181|225312","id","none","ricu","ts",0,"d_items"
+"map","vitals","mmHg",0,250,"mean arterial pressure",4239021,"mimic_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"52|443|456|6072|220052|220181|225312","id","none","ricu","ts",0,"d_items"
+"map","vitals","mmHg",0,250,"mean arterial pressure",4239021,"mimic_demo_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"52|443|456|6072|220052|220181|225312","id","none","ricu","ts",0,"d_items"
+"map","vitals","mmHg",0,250,"mean arterial pressure",4239021,"data_float_h","data_float_h","DataID",NA,NA,NA,"rgx_itm",NA,"703|706","id","none","ricu","ts",0,NA
+"resp","respiratory","insp/min",0,120,"respiratory rate",4313591,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"8874|12266","id","none","ricu","ts",0,NA
+"resp","respiratory","insp/min",0,120,"respiratory rate",4313591,"eicu_coh","vitalperiodic",NA,"respiration",NA,"observationoffset","col_itm",NA,NA,NA,"none","ricu","ts",0,NA
+"resp","respiratory","insp/min",0,120,"respiratory rate",4313591,"eicu_demo_coh","vitalperiodic",NA,"respiration",NA,"observationoffset","col_itm",NA,NA,NA,"none","ricu","ts",0,NA
+"resp","respiratory","insp/min",0,120,"respiratory rate",4313591,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"300|310","id","none","ricu","ts",0,NA
+"resp","respiratory","insp/min",0,120,"respiratory rate",4313591,"chartevents","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"220210|224688|224689|224690","id","none","ricu","ts",0,"d_items"
+"resp","respiratory","insp/min",0,120,"respiratory rate",4313591,"mimic_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"618|619|220210|224688|224689|224690","id","none","ricu","ts",0,"d_items"
+"resp","respiratory","insp/min",0,120,"respiratory rate",4313591,"mimic_demo_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"618|619|220210|224688|224689|224690","id","none","ricu","ts",0,"d_items"
+"resp","respiratory","insp/min",0,120,"respiratory rate",4313591,"data_float_h","data_float_h","DataID",NA,NA,NA,"rgx_itm",NA,"719","id","none","ricu","ts",0,NA
+"sao2","respiratory","%",50,100,"arterial oxygen saturation",40483579,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm","transform_fun(binary_op(`*`, 100))","12311","id","none","ricu","ts",0,NA
+"sao2","respiratory","%",50,100,"arterial oxygen saturation",40483579,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"O2 Sat (%)","id","none","ricu","ts",0,NA
+"sao2","respiratory","%",50,100,"arterial oxygen saturation",40483579,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"O2 Sat (%)","id","none","ricu","ts",0,NA
+"sao2","respiratory","%",50,100,"arterial oxygen saturation",40483579,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"20000800","id","none","ricu","ts",0,NA
+"sao2","respiratory","%",50,100,"arterial oxygen saturation",40483579,"chartevents","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"220227","id","none","ricu","ts",0,"d_items"
+"sao2","respiratory","%",50,100,"arterial oxygen saturation",40483579,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50817","id","none","ricu","ts",0,"d_labitems"
+"sao2","respiratory","%",50,100,"arterial oxygen saturation",40483579,"mimic_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"834|220227","id","none","ricu","ts",0,"d_items"
+"sao2","respiratory","%",50,100,"arterial oxygen saturation",40483579,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50817","id","none","ricu","ts",0,"d_labitems"
+"sao2","respiratory","%",50,100,"arterial oxygen saturation",40483579,"mimic_demo_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"834|220227","id","none","ricu","ts",0,"d_items"
+"sao2","respiratory","%",50,100,"arterial oxygen saturation",40483579,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50817","id","none","ricu","ts",0,"d_labitems"
+"sao2","respiratory","%",50,100,"arterial oxygen saturation",40483579,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"184|673|690","id","none","ricu","ts",0,NA
+"spo2","respiratory","%",50,100,"oxygen saturation",4196147,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"6709|8903","id","none","ricu","ts",0,NA
+"spo2","respiratory","%",50,100,"oxygen saturation",4196147,"eicu_coh","vitalperiodic",NA,"sao2",NA,"observationoffset","col_itm",NA,NA,NA,"none","ricu","ts",0,NA
+"spo2","respiratory","%",50,100,"oxygen saturation",4196147,"eicu_demo_coh","vitalperiodic",NA,"sao2",NA,"observationoffset","col_itm",NA,NA,NA,"none","ricu","ts",0,NA
+"spo2","respiratory","%",50,100,"oxygen saturation",4196147,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"4000|8280","id","none","ricu","ts",0,NA
+"spo2","respiratory","%",50,100,"oxygen saturation",4196147,"chartevents","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"220277|226253","id","none","ricu","ts",0,"d_items"
+"spo2","respiratory","%",50,100,"oxygen saturation",4196147,"mimic_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"646|220277|226253","id","none","ricu","ts",0,"d_items"
+"spo2","respiratory","%",50,100,"oxygen saturation",4196147,"mimic_demo_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"646|220277|226253","id","none","ricu","ts",0,"d_items"
+"spo2","respiratory","%",50,100,"oxygen saturation",4196147,"data_float_h","data_float_h","DataID",NA,NA,NA,"rgx_itm",NA,"710","id","none","ricu","ts",0,NA
+"o2sat","respiratory","%",50,100,"oxygen saturation",4011919,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"6709|8903","id","none","ricu","ts",0,NA
+"o2sat","respiratory","%",50,100,"oxygen saturation",4011919,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm","transform_fun(binary_op(`*`, 100))","12311","id","none","ricu","ts",0,NA
+"o2sat","respiratory","%",50,100,"oxygen saturation",4011919,"eicu_coh","vitalperiodic",NA,"sao2",NA,"observationoffset","col_itm",NA,NA,NA,"none","ricu","ts",0,NA
+"o2sat","respiratory","%",50,100,"oxygen saturation",4011919,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"O2 Sat (%)","id","none","ricu","ts",0,NA
+"o2sat","respiratory","%",50,100,"oxygen saturation",4011919,"eicu_demo_coh","vitalperiodic",NA,"sao2",NA,"observationoffset","col_itm",NA,NA,NA,"none","ricu","ts",0,NA
+"o2sat","respiratory","%",50,100,"oxygen saturation",4011919,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"O2 Sat (%)","id","none","ricu","ts",0,NA
+"o2sat","respiratory","%",50,100,"oxygen saturation",4011919,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"4000|8280|20000800","id","none","ricu","ts",0,NA
+"o2sat","respiratory","%",50,100,"oxygen saturation",4011919,"chartevents","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"220277|226253|220227","id","none","ricu","ts",0,"d_items"
+"o2sat","respiratory","%",50,100,"oxygen saturation",4011919,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50817","id","none","ricu","ts",0,"d_labitems"
+"o2sat","respiratory","%",50,100,"oxygen saturation",4011919,"mimic_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"646|834|220277|226253|50817","id","none","ricu","ts",0,"d_items"
+"o2sat","respiratory","%",50,100,"oxygen saturation",4011919,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50817","id","none","ricu","ts",0,"d_labitems"
+"o2sat","respiratory","%",50,100,"oxygen saturation",4011919,"mimic_demo_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"646|834|220277|226253|50817","id","none","ricu","ts",0,"d_items"
+"o2sat","respiratory","%",50,100,"oxygen saturation",4011919,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50817","id","none","ricu","ts",0,"d_labitems"
+"o2sat","respiratory","%",50,100,"oxygen saturation",4011919,"data_float_h","data_float_h","DataID",NA,NA,NA,"rgx_itm",NA,"710","id","none","ricu","ts",0,NA
+"o2sat","respiratory","%",50,100,"oxygen saturation",4011919,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"184|673|690","id","none","ricu","ts",0,NA
+"fio2","blood gas","%",21,100,"fraction of inspired oxygen",4353936,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"12279","id","none","ricu","ts",0,NA
+"fio2","blood gas","%",21,100,"fraction of inspired oxygen",4353936,"eicu_coh","respiratorycharting","respchartvaluelabel",NA,NA,NA,"rgx_itm","transform_fun(percent_as_numeric)","FiO2","id","none","ricu","ts",0,NA
+"fio2","blood gas","%",21,100,"fraction of inspired oxygen",4353936,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm","convert_unit(set_val(NA), '%', 'mm\\(hg\\)')","FiO2","id","none","ricu","ts",0,NA
+"fio2","blood gas","%",21,100,"fraction of inspired oxygen",4353936,"eicu_demo_coh","respiratorycharting","respchartvaluelabel",NA,NA,NA,"rgx_itm","transform_fun(percent_as_numeric)","FiO2","id","none","ricu","ts",0,NA
+"fio2","blood gas","%",21,100,"fraction of inspired oxygen",4353936,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm","convert_unit(set_val(NA), '%', 'mm\\(hg\\)')","FiO2","id","none","ricu","ts",0,NA
+"fio2","blood gas","%",21,100,"fraction of inspired oxygen",4353936,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"2010","id","none","ricu","ts",0,NA
+"fio2","blood gas","%",21,100,"fraction of inspired oxygen",4353936,"chartevents","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"223835","id","none","ricu","ts",0,"d_items"
+"fio2","blood gas","%",21,100,"fraction of inspired oxygen",4353936,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50816","id","none","ricu","ts",0,"d_labitems"
+"fio2","blood gas","%",21,100,"fraction of inspired oxygen",4353936,"mimic_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"3420|223835","id","none","ricu","ts",0,"d_items"
+"fio2","blood gas","%",21,100,"fraction of inspired oxygen",4353936,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50816","id","none","ricu","ts",0,"d_labitems"
+"fio2","blood gas","%",21,100,"fraction of inspired oxygen",4353936,"mimic_demo_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"3420|223835","id","none","ricu","ts",0,"d_items"
+"fio2","blood gas","%",21,100,"fraction of inspired oxygen",4353936,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50816","id","none","ricu","ts",0,"d_labitems"
+"fio2","blood gas","%",21,100,"fraction of inspired oxygen",4353936,"data_float_h","data_float_h","DataID",NA,NA,NA,"rgx_itm",NA,"2283","id","none","ricu","ts",0,NA
+"tco2","blood gas","mEq/L",5,60,"totcal CO2",4193415,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm","convert_unit(set_val(NA), 'mEq/L', 'lpm')","Total CO2","id","none","ricu","ts",0,NA
+"tco2","blood gas","mEq/L",5,60,"totcal CO2",4193415,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm","convert_unit(set_val(NA), 'mEq/L', 'lpm')","Total CO2","id","none","ricu","ts",0,NA
+"tco2","blood gas","mEq/L",5,60,"totcal CO2",4193415,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50804","id","none","ricu","ts",0,"d_labitems"
+"tco2","blood gas","mEq/L",5,60,"totcal CO2",4193415,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50804","id","none","ricu","ts",0,"d_labitems"
+"tco2","blood gas","mEq/L",5,60,"totcal CO2",4193415,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50804","id","none","ricu","ts",0,"d_labitems"
+"alt","chemistry","IU/L",0,NA,"alanine aminotransferase",4146380,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"6800|11978","id","none","ricu","ts",0,NA
+"alt","chemistry","IU/L",0,NA,"alanine aminotransferase",4146380,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"ALT (SGPT)","id","none","ricu","ts",0,NA
+"alt","chemistry","IU/L",0,NA,"alanine aminotransferase",4146380,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"ALT (SGPT)","id","none","ricu","ts",0,NA
+"alt","chemistry","IU/L",0,NA,"alanine aminotransferase",4146380,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"20002600","id","none","ricu","ts",0,NA
+"alt","chemistry","IU/L",0,NA,"alanine aminotransferase",4146380,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50861","id","none","ricu","ts",0,"d_labitems"
+"alt","chemistry","IU/L",0,NA,"alanine aminotransferase",4146380,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50861","id","none","ricu","ts",0,"d_labitems"
+"alt","chemistry","IU/L",0,NA,"alanine aminotransferase",4146380,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50861","id","none","ricu","ts",0,"d_labitems"
+"alt","chemistry","IU/L",0,NA,"alanine aminotransferase",4146380,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"617","id","none","ricu","ts",0,NA
+"ast","chemistry","IU/L",0,NA,"aspartate aminotransferase",4263457,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"6806|11990","id","none","ricu","ts",0,NA
+"ast","chemistry","IU/L",0,NA,"aspartate aminotransferase",4263457,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"AST (SGOT)","id","none","ricu","ts",0,NA
+"ast","chemistry","IU/L",0,NA,"aspartate aminotransferase",4263457,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"AST (SGOT)","id","none","ricu","ts",0,NA
+"ast","chemistry","IU/L",0,NA,"aspartate aminotransferase",4263457,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"24000330","id","none","ricu","ts",0,NA
+"ast","chemistry","IU/L",0,NA,"aspartate aminotransferase",4263457,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50878","id","none","ricu","ts",0,"d_labitems"
+"ast","chemistry","IU/L",0,NA,"aspartate aminotransferase",4263457,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50878","id","none","ricu","ts",0,"d_labitems"
+"ast","chemistry","IU/L",0,NA,"aspartate aminotransferase",4263457,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50878","id","none","ricu","ts",0,"d_labitems"
+"ast","chemistry","IU/L",0,NA,"aspartate aminotransferase",4263457,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"616","id","none","ricu","ts",0,NA
+"phos","chemistry","mg/dL",0,40,"phosphate",4017907,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm","convert_unit(binary_op(`*`, 3.097521), 'mg/dL')","6828|9935","id","none","ricu","ts",0,NA
+"phos","chemistry","mg/dL",0,40,"phosphate",4017907,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"phosphate","id","none","ricu","ts",0,NA
+"phos","chemistry","mg/dL",0,40,"phosphate",4017907,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"phosphate","id","none","ricu","ts",0,NA
+"phos","chemistry","mg/dL",0,40,"phosphate",4017907,"observations","observations","variableid",NA,NA,NA,"rgx_itm","convert_unit(binary_op(`*`, 3.097521), 'mg/dL')","20002500","id","none","ricu","ts",0,NA
+"phos","chemistry","mg/dL",0,40,"phosphate",4017907,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50970","id","none","ricu","ts",0,"d_labitems"
+"phos","chemistry","mg/dL",0,40,"phosphate",4017907,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50970","id","none","ricu","ts",0,"d_labitems"
+"phos","chemistry","mg/dL",0,40,"phosphate",4017907,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50970","id","none","ricu","ts",0,"d_labitems"
+"phos","chemistry","mg/dL",0,40,"phosphate",4017907,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm","transform_fun(binary_op(`*`, 3.097521))","471","id","none","ricu","ts",0,NA
+"bun","chemistry","mg/dL",0,200,"blood urea nitrogen",4017361,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm","convert_unit(binary_op(`*`, 2.8), 'mg/dL')","6850|9943","id","none","ricu","ts",0,NA
+"bun","chemistry","mg/dL",0,200,"blood urea nitrogen",4017361,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"BUN","id","none","ricu","ts",0,NA
+"bun","chemistry","mg/dL",0,200,"blood urea nitrogen",4017361,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"BUN","id","none","ricu","ts",0,NA
+"bun","chemistry","mg/dL",0,200,"blood urea nitrogen",4017361,"observations","observations","variableid",NA,NA,NA,"rgx_itm","convert_unit(binary_op(`*`, 2.8), 'mg/dL')","20004100","id","none","ricu","ts",0,NA
+"bun","chemistry","mg/dL",0,200,"blood urea nitrogen",4017361,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51006","id","none","ricu","ts",0,"d_labitems"
+"bun","chemistry","mg/dL",0,200,"blood urea nitrogen",4017361,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51006","id","none","ricu","ts",0,"d_labitems"
+"bun","chemistry","mg/dL",0,200,"blood urea nitrogen",4017361,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51006","id","none","ricu","ts",0,"d_labitems"
+"bun","chemistry","mg/dL",0,200,"blood urea nitrogen",4017361,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm","transform_fun(binary_op(`*`, 0.467))","355","id","none","ricu","ts",0,NA
+"ph","blood gas",NA,6.8,8,"pH of blood",4097822,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"6848|12310","id","none","ricu","ts",0,NA
+"ph","blood gas",NA,6.8,8,"pH of blood",4097822,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"pH","id","none","ricu","ts",0,NA
+"ph","blood gas",NA,6.8,8,"pH of blood",4097822,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"pH","id","none","ricu","ts",0,NA
+"ph","blood gas",NA,6.8,8,"pH of blood",4097822,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"20000300","id","none","ricu","ts",0,NA
+"ph","blood gas",NA,6.8,8,"pH of blood",4097822,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50820","id","none","ricu","ts",0,"d_labitems"
+"ph","blood gas",NA,6.8,8,"pH of blood",4097822,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50820","id","none","ricu","ts",0,"d_labitems"
+"ph","blood gas",NA,6.8,8,"pH of blood",4097822,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50820","id","none","ricu","ts",0,"d_labitems"
+"ph","blood gas",NA,6.8,8,"pH of blood",4097822,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"688","id","none","ricu","ts",0,NA
+"bili","chemistry","mg/dL",0,100,"total bilirubin",4118986,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm","convert_unit(binary_op(`*`, 0.058467), 'mg/dL')","6813|9945","id","none","ricu","ts",0,NA
+"bili","chemistry","mg/dL",0,100,"total bilirubin",4118986,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"total bilirubin","id","none","ricu","ts",0,NA
+"bili","chemistry","mg/dL",0,100,"total bilirubin",4118986,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"total bilirubin","id","none","ricu","ts",0,NA
+"bili","chemistry","mg/dL",0,100,"total bilirubin",4118986,"observations","observations","variableid",NA,NA,NA,"rgx_itm","convert_unit(binary_op(`*`, 0.058467), 'mg/dL')","20004300","id","none","ricu","ts",0,NA
+"bili","chemistry","mg/dL",0,100,"total bilirubin",4118986,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50885","id","none","ricu","ts",0,"d_labitems"
+"bili","chemistry","mg/dL",0,100,"total bilirubin",4118986,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50885","id","none","ricu","ts",0,"d_labitems"
+"bili","chemistry","mg/dL",0,100,"total bilirubin",4118986,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50885","id","none","ricu","ts",0,"d_labitems"
+"bili","chemistry","mg/dL",0,100,"total bilirubin",4118986,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"333","id","none","ricu","ts",0,NA
+"inr_pt","hematology",NA,NA,NA,"prothrombin time/international normalized ratio",4306239,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"11893","id","none","ricu","ts",0,NA
+"inr_pt","hematology",NA,NA,NA,"prothrombin time/international normalized ratio",4306239,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"PT - INR","id","none","ricu","ts",0,NA
+"inr_pt","hematology",NA,NA,NA,"prothrombin time/international normalized ratio",4306239,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"PT - INR","id","none","ricu","ts",0,NA
+"inr_pt","hematology",NA,NA,NA,"prothrombin time/international normalized ratio",4306239,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"24000567","id","none","ricu","ts",0,NA
+"inr_pt","hematology",NA,NA,NA,"prothrombin time/international normalized ratio",4306239,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51237","id","none","ricu","ts",0,"d_labitems"
+"inr_pt","hematology",NA,NA,NA,"prothrombin time/international normalized ratio",4306239,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51237","id","none","ricu","ts",0,"d_labitems"
+"inr_pt","hematology",NA,NA,NA,"prothrombin time/international normalized ratio",4306239,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51237","id","none","ricu","ts",0,"d_labitems"
+"plt","hematology","K/uL",5,1200,"platelet count",4267147,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"6797|9964|10409|14252","id","none","ricu","ts",0,NA
+"plt","hematology","K/uL",5,1200,"platelet count",4267147,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"platelets x 1000","id","none","ricu","ts",0,NA
+"plt","hematology","K/uL",5,1200,"platelet count",4267147,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"platelets x 1000","id","none","ricu","ts",0,NA
+"plt","hematology","K/uL",5,1200,"platelet count",4267147,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"20000110","id","none","ricu","ts",0,NA
+"plt","hematology","K/uL",5,1200,"platelet count",4267147,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51265","id","none","ricu","ts",0,"d_labitems"
+"plt","hematology","K/uL",5,1200,"platelet count",4267147,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51265","id","none","ricu","ts",0,"d_labitems"
+"plt","hematology","K/uL",5,1200,"platelet count",4267147,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51265","id","none","ricu","ts",0,"d_labitems"
+"plt","hematology","K/uL",5,1200,"platelet count",4267147,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"314","id","none","ricu","ts",0,NA
+"lact","blood gas","mmol/L",0,50,"lactate",4191725,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"6837|9580|10053","id","none","ricu","ts",0,NA
+"lact","blood gas","mmol/L",0,50,"lactate",4191725,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"lactate","id","none","ricu","ts",0,NA
+"lact","blood gas","mmol/L",0,50,"lactate",4191725,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"lactate","id","none","ricu","ts",0,NA
+"lact","blood gas","mmol/L",0,50,"lactate",4191725,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"24000524","id","none","ricu","ts",0,NA
+"lact","blood gas","mmol/L",0,50,"lactate",4191725,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50813","id","none","ricu","ts",0,"d_labitems"
+"lact","blood gas","mmol/L",0,50,"lactate",4191725,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50813","id","none","ricu","ts",0,"d_labitems"
+"lact","blood gas","mmol/L",0,50,"lactate",4191725,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50813","id","none","ricu","ts",0,"d_labitems"
+"lact","blood gas","mmol/L",0,50,"lactate",4191725,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"657|454","id","none","ricu","ts",0,NA
+"lymph","hematology","%",0,100,"lymphocytes",4254663,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"11846","id","none","ricu","ts",0,NA
+"lymph","hematology","%",0,100,"lymphocytes",4254663,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm","blood_cell_ratio","14258","id","none","ricu","ts",0,NA
+"lymph","hematology","%",0,100,"lymphocytes",4254663,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"-lymphs","id","none","ricu","ts",0,NA
+"lymph","hematology","%",0,100,"lymphocytes",4254663,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"-lymphs","id","none","ricu","ts",0,NA
+"lymph","hematology","%",0,100,"lymphocytes",4254663,"observations","observations","variableid",NA,NA,NA,"rgx_itm","blood_cell_ratio","24000480","id","none","ricu","ts",0,NA
+"lymph","hematology","%",0,100,"lymphocytes",4254663,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51244","id","none","ricu","ts",0,"d_labitems"
+"lymph","hematology","%",0,100,"lymphocytes",4254663,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51244","id","none","ricu","ts",0,"d_labitems"
+"lymph","hematology","%",0,100,"lymphocytes",4254663,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51244","id","none","ricu","ts",0,"d_labitems"
+"lymph","hematology","%",0,100,"lymphocytes",4254663,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"223","id","none","ricu","ts",0,NA
+"bicar","chemistry","mEq/L",5,50,"bicarbonate",4194291,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"6810|9992","id","none","ricu","ts",0,NA
+"bicar","chemistry","mEq/L",5,50,"bicarbonate",4194291,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"bicarbonate","id","none","ricu","ts",0,NA
+"bicar","chemistry","mEq/L",5,50,"bicarbonate",4194291,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"bicarbonate","id","none","ricu","ts",0,NA
+"bicar","chemistry","mEq/L",5,50,"bicarbonate",4194291,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"20004200","id","none","ricu","ts",0,NA
+"bicar","chemistry","mEq/L",5,50,"bicarbonate",4194291,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50882","id","none","ricu","ts",0,"d_labitems"
+"bicar","chemistry","mEq/L",5,50,"bicarbonate",4194291,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50882","id","none","ricu","ts",0,"d_labitems"
+"bicar","chemistry","mEq/L",5,50,"bicarbonate",4194291,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50882","id","none","ricu","ts",0,"d_labitems"
+"bicar","chemistry","mEq/L",5,50,"bicarbonate",4194291,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"451|456|666|667","id","none","ricu","ts",0,NA
+"crea","chemistry","mg/dL",0,15,"creatinine",4013964,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm","convert_unit(binary_op(`*`, 0.011309), 'mg/dL')","6836|9941|14216","id","none","ricu","ts",0,NA
+"crea","chemistry","mg/dL",0,15,"creatinine",4013964,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"creatinine","id","none","ricu","ts",0,NA
+"crea","chemistry","mg/dL",0,15,"creatinine",4013964,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"creatinine","id","none","ricu","ts",0,NA
+"crea","chemistry","mg/dL",0,15,"creatinine",4013964,"observations","observations","variableid",NA,NA,NA,"rgx_itm","convert_unit(binary_op(`*`, 0.011312), 'mg/dL')","20000600","id","none","ricu","ts",0,NA
+"crea","chemistry","mg/dL",0,15,"creatinine",4013964,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50912","id","none","ricu","ts",0,"d_labitems"
+"crea","chemistry","mg/dL",0,15,"creatinine",4013964,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50912","id","none","ricu","ts",0,"d_labitems"
+"crea","chemistry","mg/dL",0,15,"creatinine",4013964,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50912","id","none","ricu","ts",0,"d_labitems"
+"crea","chemistry","mg/dL",0,15,"creatinine",4013964,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"367","id","none","ricu","ts",0,NA
+"pt","hematology","sec",0,NA,"prothrombine time",4245261,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"6789","id","none","ricu","ts",0,NA
+"pt","hematology","sec",0,NA,"prothrombine time",4245261,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"PT","id","none","ricu","ts",0,NA
+"pt","hematology","sec",0,NA,"prothrombine time",4245261,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"PT","id","none","ricu","ts",0,NA
+"pt","hematology","sec",0,NA,"prothrombine time",4245261,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51274","id","none","ricu","ts",0,"d_labitems"
+"pt","hematology","sec",0,NA,"prothrombine time",4245261,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51274","id","none","ricu","ts",0,"d_labitems"
+"pt","hematology","sec",0,NA,"prothrombine time",4245261,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51274","id","none","ricu","ts",0,"d_labitems"
+"pt","hematology","sec",0,NA,"prothrombine time",4245261,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"598","id","none","ricu","ts",0,NA
+"rdw","hematology","%",0,100,"erythrocyte distribution width",4281085,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"18952","id","none","ricu","ts",0,NA
+"rdw","hematology","%",0,100,"erythrocyte distribution width",4281085,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"RDW","id","none","ricu","ts",0,NA
+"rdw","hematology","%",0,100,"erythrocyte distribution width",4281085,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"RDW","id","none","ricu","ts",0,NA
+"rdw","hematology","%",0,100,"erythrocyte distribution width",4281085,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51277","id","none","ricu","ts",0,"d_labitems"
+"rdw","hematology","%",0,100,"erythrocyte distribution width",4281085,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51277","id","none","ricu","ts",0,"d_labitems"
+"rdw","hematology","%",0,100,"erythrocyte distribution width",4281085,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51277","id","none","ricu","ts",0,"d_labitems"
+"rdw","hematology","%",0,100,"erythrocyte distribution width",4281085,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"3319","id","none","ricu","ts",0,NA
+"alp","chemistry","IU/L",0,NA,"alkaline phosphatase",4275206,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"6803|11984","id","none","ricu","ts",0,NA
+"alp","chemistry","IU/L",0,NA,"alkaline phosphatase",4275206,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"alkaline phos.","id","none","ricu","ts",0,NA
+"alp","chemistry","IU/L",0,NA,"alkaline phosphatase",4275206,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"alkaline phos.","id","none","ricu","ts",0,NA
+"alp","chemistry","IU/L",0,NA,"alkaline phosphatase",4275206,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"20002700","id","none","ricu","ts",0,NA
+"alp","chemistry","IU/L",0,NA,"alkaline phosphatase",4275206,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50863","id","none","ricu","ts",0,"d_labitems"
+"alp","chemistry","IU/L",0,NA,"alkaline phosphatase",4275206,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50863","id","none","ricu","ts",0,"d_labitems"
+"alp","chemistry","IU/L",0,NA,"alkaline phosphatase",4275206,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50863","id","none","ricu","ts",0,"d_labitems"
+"alp","chemistry","IU/L",0,NA,"alkaline phosphatase",4275206,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"609","id","none","ricu","ts",0,NA
+"wbc","hematology","K/uL",0,NA,"white blood cell count",4298431,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"6779|9965","id","none","ricu","ts",0,NA
+"wbc","hematology","K/uL",0,NA,"white blood cell count",4298431,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"WBC x 1000","id","none","ricu","ts",0,NA
+"wbc","hematology","K/uL",0,NA,"white blood cell count",4298431,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"WBC x 1000","id","none","ricu","ts",0,NA
+"wbc","hematology","K/uL",0,NA,"white blood cell count",4298431,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"20000700","id","none","ricu","ts",0,NA
+"wbc","hematology","K/uL",0,NA,"white blood cell count",4298431,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51301","id","none","ricu","ts",0,"d_labitems"
+"wbc","hematology","K/uL",0,NA,"white blood cell count",4298431,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51301","id","none","ricu","ts",0,"d_labitems"
+"wbc","hematology","K/uL",0,NA,"white blood cell count",4298431,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51301","id","none","ricu","ts",0,"d_labitems"
+"wbc","hematology","K/uL",0,NA,"white blood cell count",4298431,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"301","id","none","ricu","ts",0,NA
+"hgb","hematology","g/dL",4,18,"hemoglobin",4118981,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm","convert_unit(binary_op(`*`, 1.611344), 'g/dL')","6778|9553|9960|10286|19703","id","none","ricu","ts",0,NA
+"hgb","hematology","g/dL",4,18,"hemoglobin",4118981,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"Hgb","id","none","ricu","ts",0,NA
+"hgb","hematology","g/dL",4,18,"hemoglobin",4118981,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"Hgb","id","none","ricu","ts",0,NA
+"hgb","hematology","g/dL",4,18,"hemoglobin",4118981,"observations","observations","variableid",NA,NA,NA,"rgx_itm","convert_unit(binary_op(`*`, 0.1), 'g/dL', 'g/l')","24000548|24000836|20000900","id","none","ricu","ts",0,NA
+"hgb","hematology","g/dL",4,18,"hemoglobin",4118981,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51222","id","none","ricu","ts",0,"d_labitems"
+"hgb","hematology","g/dL",4,18,"hemoglobin",4118981,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51222","id","none","ricu","ts",0,"d_labitems"
+"hgb","hematology","g/dL",4,18,"hemoglobin",4118981,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51222","id","none","ricu","ts",0,"d_labitems"
+"hgb","hematology","g/dL",4,18,"hemoglobin",4118981,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"658|289","id","none","ricu","ts",0,NA
+"hct","hematology","%",15,60,"hematocrit",4151358,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm","transform_fun(binary_op(`*`, 100))","6777|11423|11545","id","none","ricu","ts",0,NA
+"hct","hematology","%",15,60,"hematocrit",4151358,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"Hct","id","none","ricu","ts",0,NA
+"hct","hematology","%",15,60,"hematocrit",4151358,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"Hct","id","none","ricu","ts",0,NA
+"hct","hematology","%",15,60,"hematocrit",4151358,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51221","id","none","ricu","ts",0,"d_labitems"
+"hct","hematology","%",15,60,"hematocrit",4151358,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51221","id","none","ricu","ts",0,"d_labitems"
+"hct","hematology","%",15,60,"hematocrit",4151358,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51221","id","none","ricu","ts",0,"d_labitems"
+"hct","hematology","%",15,60,"hematocrit",4151358,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"217|682","id","none","ricu","ts",0,NA
+"pco2","blood gas","mmHg",10,150,"CO2 partial pressure",4097882,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"6846|9990|21213","id","none","ricu","ts",0,NA
+"pco2","blood gas","mmHg",10,150,"CO2 partial pressure",4097882,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"paCO2","id","none","ricu","ts",0,NA
+"pco2","blood gas","mmHg",10,150,"CO2 partial pressure",4097882,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"paCO2","id","none","ricu","ts",0,NA
+"pco2","blood gas","mmHg",10,150,"CO2 partial pressure",4097882,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"20001200","id","none","ricu","ts",0,NA
+"pco2","blood gas","mmHg",10,150,"CO2 partial pressure",4097882,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50818","id","none","ricu","ts",0,"d_labitems"
+"pco2","blood gas","mmHg",10,150,"CO2 partial pressure",4097882,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50818","id","none","ricu","ts",0,"d_labitems"
+"pco2","blood gas","mmHg",10,150,"CO2 partial pressure",4097882,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50818","id","none","ricu","ts",0,"d_labitems"
+"pco2","blood gas","mmHg",10,150,"CO2 partial pressure",4097882,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"687","id","none","ricu","ts",0,NA
+"po2","blood gas","mmHg",40,600,"O2 partial pressure",4094581,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"7433|9996|21214","id","none","ricu","ts",0,NA
+"po2","blood gas","mmHg",40,600,"O2 partial pressure",4094581,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"paO2","id","none","ricu","ts",0,NA
+"po2","blood gas","mmHg",40,600,"O2 partial pressure",4094581,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"paO2","id","none","ricu","ts",0,NA
+"po2","blood gas","mmHg",40,600,"O2 partial pressure",4094581,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"20000200","id","none","ricu","ts",0,NA
+"po2","blood gas","mmHg",40,600,"O2 partial pressure",4094581,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50821","id","none","ricu","ts",0,"d_labitems"
+"po2","blood gas","mmHg",40,600,"O2 partial pressure",4094581,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50821","id","none","ricu","ts",0,"d_labitems"
+"po2","blood gas","mmHg",40,600,"O2 partial pressure",4094581,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50821","id","none","ricu","ts",0,"d_labitems"
+"po2","blood gas","mmHg",40,600,"O2 partial pressure",4094581,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"664|689","id","none","ricu","ts",0,NA
+"mch","hematology","pg",0,NA,"mean corpuscular hemoglobin",4182871,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm","convert_unit(binary_op(`*`, 0.016113), 'pg')","11679","id","none","ricu","ts",0,NA
+"mch","hematology","pg",0,NA,"mean corpuscular hemoglobin",4182871,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"MCH","id","none","ricu","ts",0,NA
+"mch","hematology","pg",0,NA,"mean corpuscular hemoglobin",4182871,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"MCH","id","none","ricu","ts",0,NA
+"mch","hematology","pg",0,NA,"mean corpuscular hemoglobin",4182871,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"24000160","id","none","ricu","ts",0,NA
+"mch","hematology","pg",0,NA,"mean corpuscular hemoglobin",4182871,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51248","id","none","ricu","ts",0,"d_labitems"
+"mch","hematology","pg",0,NA,"mean corpuscular hemoglobin",4182871,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51248","id","none","ricu","ts",0,"d_labitems"
+"mch","hematology","pg",0,NA,"mean corpuscular hemoglobin",4182871,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51248","id","none","ricu","ts",0,"d_labitems"
+"mch","hematology","pg",0,NA,"mean corpuscular hemoglobin",4182871,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"566","id","none","ricu","ts",0,NA
+"mchc","hematology","%",20,50,"mean corpuscular hemoglobin concentration",4290193,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm","convert_unit(binary_op(`*`, 1.611), '%')","18666","id","none","ricu","ts",0,NA
+"mchc","hematology","%",20,50,"mean corpuscular hemoglobin concentration",4290193,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"MCHC","id","none","ricu","ts",0,NA
+"mchc","hematology","%",20,50,"mean corpuscular hemoglobin concentration",4290193,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"MCHC","id","none","ricu","ts",0,NA
+"mchc","hematology","%",20,50,"mean corpuscular hemoglobin concentration",4290193,"observations","observations","variableid",NA,NA,NA,"rgx_itm","convert_unit(binary_op(`*`, 0.16114), '%')","24000170","id","none","ricu","ts",0,NA
+"mchc","hematology","%",20,50,"mean corpuscular hemoglobin concentration",4290193,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51249","id","none","ricu","ts",0,"d_labitems"
+"mchc","hematology","%",20,50,"mean corpuscular hemoglobin concentration",4290193,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51249","id","none","ricu","ts",0,"d_labitems"
+"mchc","hematology","%",20,50,"mean corpuscular hemoglobin concentration",4290193,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51249","id","none","ricu","ts",0,"d_labitems"
+"mchc","hematology","%",20,50,"mean corpuscular hemoglobin concentration",4290193,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"290","id","none","ricu","ts",0,NA
+"mcv","hematology","fL",50,150,"mean corpuscular volume",4016239,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"9968","id","none","ricu","ts",0,NA
+"mcv","hematology","fL",50,150,"mean corpuscular volume",4016239,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"MCV","id","none","ricu","ts",0,NA
+"mcv","hematology","fL",50,150,"mean corpuscular volume",4016239,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"MCV","id","none","ricu","ts",0,NA
+"mcv","hematology","fL",50,150,"mean corpuscular volume",4016239,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"24000150","id","none","ricu","ts",0,NA
+"mcv","hematology","fL",50,150,"mean corpuscular volume",4016239,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51250","id","none","ricu","ts",0,"d_labitems"
+"mcv","hematology","fL",50,150,"mean corpuscular volume",4016239,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51250","id","none","ricu","ts",0,"d_labitems"
+"mcv","hematology","fL",50,150,"mean corpuscular volume",4016239,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51250","id","none","ricu","ts",0,"d_labitems"
+"mcv","hematology","fL",50,150,"mean corpuscular volume",4016239,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"286","id","none","ricu","ts",0,NA
+"ptt","hematology","sec",0,NA,"partial thromboplastin time",4175016,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"17982","id","none","ricu","ts",0,NA
+"ptt","hematology","sec",0,NA,"partial thromboplastin time",4175016,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"PTT","id","none","ricu","ts",0,NA
+"ptt","hematology","sec",0,NA,"partial thromboplastin time",4175016,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"PTT","id","none","ricu","ts",0,NA
+"ptt","hematology","sec",0,NA,"partial thromboplastin time",4175016,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"20004410","id","none","ricu","ts",0,NA
+"ptt","hematology","sec",0,NA,"partial thromboplastin time",4175016,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51275","id","none","ricu","ts",0,"d_labitems"
+"ptt","hematology","sec",0,NA,"partial thromboplastin time",4175016,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51275","id","none","ricu","ts",0,"d_labitems"
+"ptt","hematology","sec",0,NA,"partial thromboplastin time",4175016,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51275","id","none","ricu","ts",0,"d_labitems"
+"ptt","hematology","sec",0,NA,"partial thromboplastin time",4175016,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"597","id","none","ricu","ts",0,NA
+"ca","chemistry","mg/dL",4,20,"calcium",4216722,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm","convert_unit(binary_op(`*`, 4.008), 'mg/dL')","6817|9933","id","none","ricu","ts",0,NA
+"ca","chemistry","mg/dL",4,20,"calcium",4216722,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm","convert_unit(binary_op(`*`, 4), 'mg/dL', 'mmol/l')","calcium","id","none","ricu","ts",0,NA
+"ca","chemistry","mg/dL",4,20,"calcium",4216722,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm","convert_unit(binary_op(`*`, 4), 'mg/dL', 'mmol/l')","calcium","id","none","ricu","ts",0,NA
+"ca","chemistry","mg/dL",4,20,"calcium",4216722,"observations","observations","variableid",NA,NA,NA,"rgx_itm","convert_unit(binary_op(`*`, 4.008), 'mg/dL')","20005100","id","none","ricu","ts",0,NA
+"ca","chemistry","mg/dL",4,20,"calcium",4216722,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50893","id","none","ricu","ts",0,"d_labitems"
+"ca","chemistry","mg/dL",4,20,"calcium",4216722,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50893","id","none","ricu","ts",0,"d_labitems"
+"ca","chemistry","mg/dL",4,20,"calcium",4216722,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50893","id","none","ricu","ts",0,"d_labitems"
+"ca","chemistry","mg/dL",4,20,"calcium",4216722,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm","transform_fun(binary_op(`*`, 4.008))","457","id","none","ricu","ts",0,NA
+"cl","chemistry","mEq/L",80,130,"chloride",4188066,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"9930","id","none","ricu","ts",0,NA
+"cl","chemistry","mEq/L",80,130,"chloride",4188066,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"chloride","id","none","ricu","ts",0,NA
+"cl","chemistry","mEq/L",80,130,"chloride",4188066,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"chloride","id","none","ricu","ts",0,NA
+"cl","chemistry","mEq/L",80,130,"chloride",4188066,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"24000439|24000521","id","none","ricu","ts",0,NA
+"cl","chemistry","mEq/L",80,130,"chloride",4188066,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50902","id","none","ricu","ts",0,"d_labitems"
+"cl","chemistry","mEq/L",80,130,"chloride",4188066,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50902","id","none","ricu","ts",0,"d_labitems"
+"cl","chemistry","mEq/L",80,130,"chloride",4188066,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50902","id","none","ricu","ts",0,"d_labitems"
+"cl","chemistry","mEq/L",80,130,"chloride",4188066,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"683|450","id","none","ricu","ts",0,NA
+"mg","chemistry","mg/dL",0.5,5,"magnesium",4243005,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm","convert_unit(binary_op(`*`, 2.431), 'mg/dL')","6839|9952","id","none","ricu","ts",0,NA
+"mg","chemistry","mg/dL",0.5,5,"magnesium",4243005,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm","convert_unit(binary_op(`/`, 1.215), 'mg/dL', 'mEq/L')","magnesium","id","none","ricu","ts",0,NA
+"mg","chemistry","mg/dL",0.5,5,"magnesium",4243005,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm","convert_unit(binary_op(`/`, 1.215), 'mg/dL', 'mEq/L')","magnesium","id","none","ricu","ts",0,NA
+"mg","chemistry","mg/dL",0.5,5,"magnesium",4243005,"observations","observations","variableid",NA,NA,NA,"rgx_itm","convert_unit(binary_op(`*`, 2.431), 'mg/dL')","24000230","id","none","ricu","ts",0,NA
+"mg","chemistry","mg/dL",0.5,5,"magnesium",4243005,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50960","id","none","ricu","ts",0,"d_labitems"
+"mg","chemistry","mg/dL",0.5,5,"magnesium",4243005,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50960","id","none","ricu","ts",0,"d_labitems"
+"mg","chemistry","mg/dL",0.5,5,"magnesium",4243005,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50960","id","none","ricu","ts",0,"d_labitems"
+"mg","chemistry","mg/dL",0.5,5,"magnesium",4243005,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm","transform_fun(binary_op(`*`, 2.431))","468","id","none","ricu","ts",0,NA
+"k","chemistry","mEq/L",0,10,"potassium",4207483,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"6835|9556|9927|10285","id","none","ricu","ts",0,NA
+"k","chemistry","mEq/L",0,10,"potassium",4207483,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"potassium","id","none","ricu","ts",0,NA
+"k","chemistry","mEq/L",0,10,"potassium",4207483,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"potassium","id","none","ricu","ts",0,NA
+"k","chemistry","mEq/L",0,10,"potassium",4207483,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"20000500|24000520|24000833|24000867","id","none","ricu","ts",0,NA
+"k","chemistry","mEq/L",0,10,"potassium",4207483,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50971","id","none","ricu","ts",0,"d_labitems"
+"k","chemistry","mEq/L",0,10,"potassium",4207483,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50971","id","none","ricu","ts",0,"d_labitems"
+"k","chemistry","mEq/L",0,10,"potassium",4207483,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50971","id","none","ricu","ts",0,"d_labitems"
+"k","chemistry","mEq/L",0,10,"potassium",4207483,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"463|685","id","none","ricu","ts",0,NA
+"na","chemistry","mEq/L",110,165,"sodium",4208938,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"6840|9555|9924|10284","id","none","ricu","ts",0,NA
+"na","chemistry","mEq/L",110,165,"sodium",4208938,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"sodium","id","none","ricu","ts",0,NA
+"na","chemistry","mEq/L",110,165,"sodium",4208938,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"sodium","id","none","ricu","ts",0,NA
+"na","chemistry","mEq/L",110,165,"sodium",4208938,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"20000400|24000519|24000658|24000835|24000866","id","none","ricu","ts",0,NA
+"na","chemistry","mEq/L",110,165,"sodium",4208938,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50983","id","none","ricu","ts",0,"d_labitems"
+"na","chemistry","mEq/L",110,165,"sodium",4208938,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50983","id","none","ricu","ts",0,"d_labitems"
+"na","chemistry","mEq/L",110,165,"sodium",4208938,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50983","id","none","ricu","ts",0,"d_labitems"
+"na","chemistry","mEq/L",110,165,"sodium",4208938,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"469|686","id","none","ricu","ts",0,NA
+"basos","hematology","%",0,50,"basophils",4172647,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"11710","id","none","ricu","ts",0,NA
+"basos","hematology","%",0,50,"basophils",4172647,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm","blood_cell_ratio","14256","id","none","ricu","ts",0,NA
+"basos","hematology","%",0,50,"basophils",4172647,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"-basos","id","none","ricu","ts",0,NA
+"basos","hematology","%",0,50,"basophils",4172647,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"-basos","id","none","ricu","ts",0,NA
+"basos","hematology","%",0,50,"basophils",4172647,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51146","id","none","ricu","ts",0,"d_labitems"
+"basos","hematology","%",0,50,"basophils",4172647,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51146","id","none","ricu","ts",0,"d_labitems"
+"basos","hematology","%",0,50,"basophils",4172647,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51146","id","none","ricu","ts",0,"d_labitems"
+"basos","hematology","%",0,50,"basophils",4172647,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"174","id","none","ricu","ts",0,NA
+"eos","hematology","%",0,50,"eosinophils",4216098,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"6773","id","none","ricu","ts",0,NA
+"eos","hematology","%",0,50,"eosinophils",4216098,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm","blood_cell_ratio","9967","id","none","ricu","ts",0,NA
+"eos","hematology","%",0,50,"eosinophils",4216098,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"-eos","id","none","ricu","ts",0,NA
+"eos","hematology","%",0,50,"eosinophils",4216098,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"-eos","id","none","ricu","ts",0,NA
+"eos","hematology","%",0,50,"eosinophils",4216098,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51200","id","none","ricu","ts",0,"d_labitems"
+"eos","hematology","%",0,50,"eosinophils",4216098,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51200","id","none","ricu","ts",0,"d_labitems"
+"eos","hematology","%",0,50,"eosinophils",4216098,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51200","id","none","ricu","ts",0,"d_labitems"
+"eos","hematology","%",0,50,"eosinophils",4216098,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"197","id","none","ricu","ts",0,NA
+"neut","hematology","%",0,100,"neutrophils",4148615,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"6786|11856","id","none","ricu","ts",0,NA
+"neut","hematology","%",0,100,"neutrophils",4148615,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm","blood_cell_ratio","14254","id","none","ricu","ts",0,NA
+"neut","hematology","%",0,100,"neutrophils",4148615,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"-polys","id","none","ricu","ts",0,NA
+"neut","hematology","%",0,100,"neutrophils",4148615,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"-polys","id","none","ricu","ts",0,NA
+"neut","hematology","%",0,100,"neutrophils",4148615,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"24000550","id","none","ricu","ts",0,NA
+"neut","hematology","%",0,100,"neutrophils",4148615,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51256","id","none","ricu","ts",0,"d_labitems"
+"neut","hematology","%",0,100,"neutrophils",4148615,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51256","id","none","ricu","ts",0,"d_labitems"
+"neut","hematology","%",0,100,"neutrophils",4148615,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51256","id","none","ricu","ts",0,"d_labitems"
+"neut","hematology","%",0,100,"neutrophils",4148615,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"230","id","none","ricu","ts",0,NA
+"glu","chemistry","mg/dL",0,1000,"glucose",4144235,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm","convert_unit(binary_op(`*`, 18.016), 'mg/dL')","6833|9557|9947","id","none","ricu","ts",0,NA
+"glu","chemistry","mg/dL",0,1000,"glucose",4144235,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"glucose","id","none","ricu","ts",0,NA
+"glu","chemistry","mg/dL",0,1000,"glucose",4144235,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"bedside glucose","id","none","ricu","ts",0,NA
+"glu","chemistry","mg/dL",0,1000,"glucose",4144235,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"glucose","id","none","ricu","ts",0,NA
+"glu","chemistry","mg/dL",0,1000,"glucose",4144235,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"bedside glucose","id","none","ricu","ts",0,NA
+"glu","chemistry","mg/dL",0,1000,"glucose",4144235,"observations","observations","variableid",NA,NA,NA,"rgx_itm","convert_unit(binary_op(`*`, 18.016), 'mg/dL')","20005110|24000523|24000585","id","none","ricu","ts",0,NA
+"glu","chemistry","mg/dL",0,1000,"glucose",4144235,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50809|50931","id","none","ricu","ts",0,"d_labitems"
+"glu","chemistry","mg/dL",0,1000,"glucose",4144235,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50809|50931","id","none","ricu","ts",0,"d_labitems"
+"glu","chemistry","mg/dL",0,1000,"glucose",4144235,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50809|50931","id","none","ricu","ts",0,"d_labitems"
+"glu","chemistry","mg/dL",0,1000,"glucose",4144235,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"348|656","id","none","ricu","ts",0,NA
+"cai","blood gas","mmol/L",0.5,2,"calcium ionized",46272910,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"6815|8915|9560|9561|10267","id","none","ricu","ts",0,NA
+"cai","blood gas","mmol/L",0.5,2,"calcium ionized",46272910,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"ionized calcium","id","none","ricu","ts",0,NA
+"cai","blood gas","mmol/L",0.5,2,"calcium ionized",46272910,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"ionized calcium","id","none","ricu","ts",0,NA
+"cai","blood gas","mmol/L",0.5,2,"calcium ionized",46272910,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"24000522","id","none","ricu","ts",0,NA
+"cai","blood gas","mmol/L",0.5,2,"calcium ionized",46272910,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50808","id","none","ricu","ts",0,"d_labitems"
+"cai","blood gas","mmol/L",0.5,2,"calcium ionized",46272910,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50808","id","none","ricu","ts",0,"d_labitems"
+"cai","blood gas","mmol/L",0.5,2,"calcium ionized",46272910,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50808","id","none","ricu","ts",0,"d_labitems"
+"cai","blood gas","mmol/L",0.5,2,"calcium ionized",46272910,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"655","id","none","ricu","ts",0,NA
+"crp","chemistry","mg/L",0,NA,"C-reactive protein",4208414,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"6825|10079","id","none","ricu","ts",0,NA
+"crp","chemistry","mg/L",0,NA,"C-reactive protein",4208414,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm","convert_unit(binary_op(`*`, 10), 'mg/L', 'mg/dl')","CRP","id","none","ricu","ts",0,NA
+"crp","chemistry","mg/L",0,NA,"C-reactive protein",4208414,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm","convert_unit(binary_op(`*`, 10), 'mg/L', 'mg/dl')","CRP","id","none","ricu","ts",0,NA
+"crp","chemistry","mg/L",0,NA,"C-reactive protein",4208414,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"20002200","id","none","ricu","ts",0,NA
+"crp","chemistry","mg/L",0,NA,"C-reactive protein",4208414,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm","convert_unit(binary_op(`*`, 10), 'mg/L', 'mg/dl')","50889","id","none","ricu","ts",0,"d_labitems"
+"crp","chemistry","mg/L",0,NA,"C-reactive protein",4208414,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm","convert_unit(binary_op(`*`, 10), 'mg/L', 'mg/dl')","50889","id","none","ricu","ts",0,"d_labitems"
+"crp","chemistry","mg/L",0,NA,"C-reactive protein",4208414,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm","convert_unit(binary_op(`*`, 10), 'mg/L', 'mg/dl')","50889","id","none","ricu","ts",0,"d_labitems"
+"esr","hematology","mm/hr",0,200,"erythrocyte sedimentation rate",4212065,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"6808|11902","id","none","ricu","ts",0,NA
+"esr","hematology","mm/hr",0,200,"erythrocyte sedimentation rate",4212065,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"24000668","id","none","ricu","ts",0,NA
+"esr","hematology","mm/hr",0,200,"erythrocyte sedimentation rate",4212065,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51288","id","none","ricu","ts",0,"d_labitems"
+"esr","hematology","mm/hr",0,200,"erythrocyte sedimentation rate",4212065,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51288","id","none","ricu","ts",0,"d_labitems"
+"esr","hematology","mm/hr",0,200,"erythrocyte sedimentation rate",4212065,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51288","id","none","ricu","ts",0,"d_labitems"
+"hbco","blood gas",NA,NA,NA,"carboxyhemoglobin",4056787,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"11690","id","none","ricu","ts",0,NA
+"hbco","blood gas",NA,NA,NA,"carboxyhemoglobin",4056787,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"Carboxyhemoglobin","id","none","ricu","ts",0,NA
+"hbco","blood gas",NA,NA,NA,"carboxyhemoglobin",4056787,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"Carboxyhemoglobin","id","none","ricu","ts",0,NA
+"hbco","blood gas",NA,NA,NA,"carboxyhemoglobin",4056787,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"24000526","id","none","ricu","ts",0,NA
+"methb","blood gas","%",0,100,"methemoglobin",4204561,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"11692","id","none","ricu","ts",0,NA
+"methb","blood gas","%",0,100,"methemoglobin",4204561,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"Methemoglobin","id","none","ricu","ts",0,NA
+"methb","blood gas","%",0,100,"methemoglobin",4204561,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"Methemoglobin","id","none","ricu","ts",0,NA
+"methb","blood gas","%",0,100,"methemoglobin",4204561,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"24000549","id","none","ricu","ts",0,NA
+"methb","blood gas","%",0,100,"methemoglobin",4204561,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50814","id","none","ricu","ts",0,"d_labitems"
+"methb","blood gas","%",0,100,"methemoglobin",4204561,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50814","id","none","ricu","ts",0,"d_labitems"
+"methb","blood gas","%",0,100,"methemoglobin",4204561,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50814","id","none","ricu","ts",0,"d_labitems"
+"tnt","chemistry","ng/mL",0,NA,"troponin t",4005525,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"10407","id","none","ricu","ts",0,NA
+"tnt","chemistry","ng/mL",0,NA,"troponin t",4005525,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"troponin - T","id","none","ricu","ts",0,NA
+"tnt","chemistry","ng/mL",0,NA,"troponin t",4005525,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"troponin - T","id","none","ricu","ts",0,NA
+"tnt","chemistry","ng/mL",0,NA,"troponin t",4005525,"observations","observations","variableid",NA,NA,NA,"rgx_itm","convert_unit(binary_op(`/`, 1000), 'ng/mL')","24000806","id","none","ricu","ts",0,NA
+"tnt","chemistry","ng/mL",0,NA,"troponin t",4005525,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51003","id","none","ricu","ts",0,"d_labitems"
+"tnt","chemistry","ng/mL",0,NA,"troponin t",4005525,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51003","id","none","ricu","ts",0,"d_labitems"
+"tnt","chemistry","ng/mL",0,NA,"troponin t",4005525,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51003","id","none","ricu","ts",0,"d_labitems"
+"tnt","chemistry","ng/mL",0,NA,"troponin t",4005525,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm","transform_fun(binary_op(`/`, 1000))","481","id","none","ricu","ts",0,NA
+"alb","chemistry","g/dL",0,6,"albumin",4017497,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm","convert_unit(binary_op(`*`, 0.1), 'g/dL')","6801|9937","id","none","ricu","ts",0,NA
+"alb","chemistry","g/dL",0,6,"albumin",4017497,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"albumin","id","none","ricu","ts",0,NA
+"alb","chemistry","g/dL",0,6,"albumin",4017497,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"albumin","id","none","ricu","ts",0,NA
+"alb","chemistry","g/dL",0,6,"albumin",4017497,"observations","observations","variableid",NA,NA,NA,"rgx_itm","convert_unit(binary_op(`*`, 0.1), 'g/dL')","24000605","id","none","ricu","ts",0,NA
+"alb","chemistry","g/dL",0,6,"albumin",4017497,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50862","id","none","ricu","ts",0,"d_labitems"
+"alb","chemistry","g/dL",0,6,"albumin",4017497,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50862","id","none","ricu","ts",0,"d_labitems"
+"alb","chemistry","g/dL",0,6,"albumin",4017497,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50862","id","none","ricu","ts",0,"d_labitems"
+"alb","chemistry","g/dL",0,6,"albumin",4017497,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"287","id","none","ricu","ts",0,NA
+"fgn","hematology","mg/dL",0,1500,"fibrinogen",4094436,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm","convert_unit(binary_op(`*`, 100), 'mg/dL')","6776|9989|10175","id","none","ricu","ts",0,NA
+"fgn","hematology","mg/dL",0,1500,"fibrinogen",4094436,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"fibrinogen","id","none","ricu","ts",0,NA
+"fgn","hematology","mg/dL",0,1500,"fibrinogen",4094436,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"fibrinogen","id","none","ricu","ts",0,NA
+"fgn","hematology","mg/dL",0,1500,"fibrinogen",4094436,"observations","observations","variableid",NA,NA,NA,"rgx_itm","convert_unit(binary_op(`*`, 100), 'mg/dL')","24000536","id","none","ricu","ts",0,NA
+"fgn","hematology","mg/dL",0,1500,"fibrinogen",4094436,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51214","id","none","ricu","ts",0,"d_labitems"
+"fgn","hematology","mg/dL",0,1500,"fibrinogen",4094436,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51214","id","none","ricu","ts",0,"d_labitems"
+"fgn","hematology","mg/dL",0,1500,"fibrinogen",4094436,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51214","id","none","ricu","ts",0,"d_labitems"
+"fgn","hematology","mg/dL",0,1500,"fibrinogen",4094436,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"344","id","none","ricu","ts",0,NA
+"be","blood gas","mEq/L",-25,25,"base excess",4284393,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm","aumc_bxs","6807|9994","id","none","ricu","ts",0,NA
+"be","blood gas","mEq/L",-25,25,"base excess",4284393,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"Base Excess","id","none","ricu","ts",0,NA
+"be","blood gas","mEq/L",-25,25,"base excess",4284393,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"Base Excess","id","none","ricu","ts",0,NA
+"be","blood gas","mEq/L",-25,25,"base excess",4284393,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"20001300","id","none","ricu","ts",0,NA
+"be","blood gas","mEq/L",-25,25,"base excess",4284393,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50802","id","none","ricu","ts",0,"d_labitems"
+"be","blood gas","mEq/L",-25,25,"base excess",4284393,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50802","id","none","ricu","ts",0,"d_labitems"
+"be","blood gas","mEq/L",-25,25,"base excess",4284393,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50802","id","none","ricu","ts",0,"d_labitems"
+"be","blood gas","mEq/L",-25,25,"base excess",4284393,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"668","id","none","ricu","ts",0,NA
+"rbc","hematology","m/uL",0,20,"red blood cell count",4030871,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"6774|9962","id","none","ricu","ts",0,NA
+"rbc","hematology","m/uL",0,20,"red blood cell count",4030871,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"RBC","id","none","ricu","ts",0,NA
+"rbc","hematology","m/uL",0,20,"red blood cell count",4030871,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"RBC","id","none","ricu","ts",0,NA
+"rbc","hematology","m/uL",0,20,"red blood cell count",4030871,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51279","id","none","ricu","ts",0,"d_labitems"
+"rbc","hematology","m/uL",0,20,"red blood cell count",4030871,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51279","id","none","ricu","ts",0,"d_labitems"
+"rbc","hematology","m/uL",0,20,"red blood cell count",4030871,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51279","id","none","ricu","ts",0,"d_labitems"
+"rbc","hematology","m/uL",0,20,"red blood cell count",4030871,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"599","id","none","ricu","ts",0,NA
+"ck","chemistry","IU/L",0,NA,"creatine kinase",4265595,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"6822|11998","id","none","ricu","ts",0,NA
+"ck","chemistry","IU/L",0,NA,"creatine kinase",4265595,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"CPK","id","none","ricu","ts",0,NA
+"ck","chemistry","IU/L",0,NA,"creatine kinase",4265595,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"CPK","id","none","ricu","ts",0,NA
+"ck","chemistry","IU/L",0,NA,"creatine kinase",4265595,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"24000210","id","none","ricu","ts",0,NA
+"ck","chemistry","IU/L",0,NA,"creatine kinase",4265595,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50910","id","none","ricu","ts",0,"d_labitems"
+"ck","chemistry","IU/L",0,NA,"creatine kinase",4265595,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50910","id","none","ricu","ts",0,"d_labitems"
+"ck","chemistry","IU/L",0,NA,"creatine kinase",4265595,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50910","id","none","ricu","ts",0,"d_labitems"
+"ck","chemistry","IU/L",0,NA,"creatine kinase",4265595,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"611","id","none","ricu","ts",0,NA
+"ckmb","chemistry","ng/mL",0,NA,"creatine kinase MB",4017058,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"6824","id","none","ricu","ts",0,NA
+"ckmb","chemistry","ng/mL",0,NA,"creatine kinase MB",4017058,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"CPK-MB","id","none","ricu","ts",0,NA
+"ckmb","chemistry","ng/mL",0,NA,"creatine kinase MB",4017058,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"CPK-MB","id","none","ricu","ts",0,NA
+"ckmb","chemistry","ng/mL",0,NA,"creatine kinase MB",4017058,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"24000220","id","none","ricu","ts",0,NA
+"ckmb","chemistry","ng/mL",0,NA,"creatine kinase MB",4017058,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50911","id","none","ricu","ts",0,"d_labitems"
+"ckmb","chemistry","ng/mL",0,NA,"creatine kinase MB",4017058,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50911","id","none","ricu","ts",0,"d_labitems"
+"ckmb","chemistry","ng/mL",0,NA,"creatine kinase MB",4017058,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50911","id","none","ricu","ts",0,"d_labitems"
+"ckmb","chemistry","ng/mL",0,NA,"creatine kinase MB",4017058,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"253","id","none","ricu","ts",0,NA
+"egcs","neurological",NA,1,4,"GCS eye",4084277,"listitems","listitems","itemid",NA,NA,NA,"rgx_itm","apply_map( c(`Geen reactie` = 1, `Reactie op pijnprikkel` = 2, `Reactie op verbale prikkel` = 3, `Spontane reactie` = 4) )","6732","id","none","ricu","ts",0,NA
+"egcs","neurological",NA,1,4,"GCS eye",4084277,"listitems","listitems","itemid",NA,NA,NA,"rgx_itm","apply_map( c(`Niet` = 1, `Op pijn` = 2, `Op aanspreken` = 3, `Spontaan` = 4) )","13077","id","none","ricu","ts",0,NA
+"egcs","neurological",NA,1,4,"GCS eye",4084277,"eicu_coh","nursecharting","nursingchartcelltypevalname","nursingchartvalue",NA,"nursingchartoffset","rgx_itm",NA,"Eyes","id","none","ricu","ts",0,NA
+"egcs","neurological",NA,1,4,"GCS eye",4084277,"eicu_demo_coh","nursecharting","nursingchartcelltypevalname","nursingchartvalue",NA,"nursingchartoffset","rgx_itm",NA,"Eyes","id","none","ricu","ts",0,NA
+"egcs","neurological",NA,1,4,"GCS eye",4084277,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"10000300","id","none","ricu","ts",0,NA
+"egcs","neurological",NA,1,4,"GCS eye",4084277,"chartevents","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"220739","id","none","ricu","ts",0,"d_items"
+"egcs","neurological",NA,1,4,"GCS eye",4084277,"mimic_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"184|220739","id","none","ricu","ts",0,"d_items"
+"egcs","neurological",NA,1,4,"GCS eye",4084277,"mimic_demo_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"184|220739","id","none","ricu","ts",0,"d_items"
+"vgcs","neurological",NA,1,5,"GCS verbal",4084912,"listitems","listitems","itemid",NA,NA,NA,"rgx_itm","apply_map( c(`Geen reactie (geen zichtbare poging tot praten)` = 1, `Onbegrijpelijke geluiden` = 2, `Onduidelijke woorden (pogingen tot communicatie, maar onduidelijk)` = 3, `Verwarde conversatie` = 4, `Helder en adequaat (communicatie mogelijk)` = 5) )","6735","id","none","ricu","ts",0,NA
+"vgcs","neurological",NA,1,5,"GCS verbal",4084912,"listitems","listitems","itemid",NA,NA,NA,"rgx_itm","apply_map( c(`Geen geluid` = 1, `Onverstaanbare woorden` = 2, `Onjuiste woorden` = 3, `Verwarde taal` = 4, `Georiënteerd` = 5) )","13066","id","none","ricu","ts",0,NA
+"vgcs","neurological",NA,1,5,"GCS verbal",4084912,"eicu_coh","nursecharting","nursingchartcelltypevalname","nursingchartvalue",NA,"nursingchartoffset","rgx_itm",NA,"Verbal","id","none","ricu","ts",0,NA
+"vgcs","neurological",NA,1,5,"GCS verbal",4084912,"eicu_demo_coh","nursecharting","nursingchartcelltypevalname","nursingchartvalue",NA,"nursingchartoffset","rgx_itm",NA,"Verbal","id","none","ricu","ts",0,NA
+"vgcs","neurological",NA,1,5,"GCS verbal",4084912,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"10000100","id","none","ricu","ts",0,NA
+"vgcs","neurological",NA,1,5,"GCS verbal",4084912,"chartevents","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"223900","id","none","ricu","ts",0,"d_items"
+"vgcs","neurological",NA,1,5,"GCS verbal",4084912,"mimic_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"723|223900","id","none","ricu","ts",0,"d_items"
+"vgcs","neurological",NA,1,5,"GCS verbal",4084912,"mimic_demo_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"723|223900","id","none","ricu","ts",0,"d_items"
+"mgcs","neurological",NA,1,6,"GCS motor",4083352,"listitems","listitems","itemid",NA,NA,NA,"rgx_itm","apply_map( c(`Geen reactie` = 1, `Strekken` = 2, `Decortatie reflex (abnormaal buigen)` = 3, `Spastische reactie (terugtrekken)` = 4, `Localiseert pijn` = 5, `Volgt verbale commando's op` = 6) )","6734","id","none","ricu","ts",0,NA
+"mgcs","neurological",NA,1,6,"GCS motor",4083352,"listitems","listitems","itemid",NA,NA,NA,"rgx_itm","apply_map( c(`Geen reactie` = 1, `Strekken op pijn` = 2, `Abnormaal buigen bij pijn` = 3, `Terugtrekken bij pijn` = 4, `Localiseren pijn` = 5, `Voert opdrachten uit` = 6) )","13072","id","none","ricu","ts",0,NA
+"mgcs","neurological",NA,1,6,"GCS motor",4083352,"eicu_coh","nursecharting","nursingchartcelltypevalname","nursingchartvalue",NA,"nursingchartoffset","rgx_itm",NA,"Motor","id","none","ricu","ts",0,NA
+"mgcs","neurological",NA,1,6,"GCS motor",4083352,"eicu_demo_coh","nursecharting","nursingchartcelltypevalname","nursingchartvalue",NA,"nursingchartoffset","rgx_itm",NA,"Motor","id","none","ricu","ts",0,NA
+"mgcs","neurological",NA,1,6,"GCS motor",4083352,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"10000200","id","none","ricu","ts",0,NA
+"mgcs","neurological",NA,1,6,"GCS motor",4083352,"chartevents","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"223901","id","none","ricu","ts",0,"d_items"
+"mgcs","neurological",NA,1,6,"GCS motor",4083352,"mimic_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"454|223901","id","none","ricu","ts",0,"d_items"
+"mgcs","neurological",NA,1,6,"GCS motor",4083352,"mimic_demo_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"454|223901","id","none","ricu","ts",0,"d_items"
+"tgcs","neurological",NA,3,15,"GCS total",4093836,"eicu_coh","nursecharting","nursingchartcelltypevalname","nursingchartvalue",NA,"nursingchartoffset","rgx_itm",NA,"GCS Total","id","none","ricu","ts",0,NA
+"tgcs","neurological",NA,3,15,"GCS total",4093836,"eicu_demo_coh","nursecharting","nursingchartcelltypevalname","nursingchartvalue",NA,"nursingchartoffset","rgx_itm",NA,"GCS Total","id","none","ricu","ts",0,NA
+"tgcs","neurological",NA,3,15,"GCS total",4093836,"mimic_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"198","id","none","ricu","ts",0,"d_items"
+"tgcs","neurological",NA,3,15,"GCS total",4093836,"mimic_demo_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"198","id","none","ricu","ts",0,"d_items"
+"urine","output","mL",0,2000,"urine output",4264378,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"8794","id","none","ricu","ts",0,NA
+"urine","output","mL",0,2000,"urine output",4264378,"eicu_coh","intakeoutput","celllabel","cellvaluenumeric",NA,"intakeoutputoffset","rgx_itm",NA,"Urine|URINE CATHETER","id","none","ricu","ts",0,NA
+"urine","output","mL",0,2000,"urine output",4264378,"eicu_coh","intakeoutput","celllabel","cellvaluenumeric",NA,"intakeoutputoffset","rgx_exp_itm",NA,"catheter.+output|output.+catheter","regex","none","ricu","ts",0,NA
+"urine","output","mL",0,2000,"urine output",4264378,"eicu_demo_coh","intakeoutput","celllabel","cellvaluenumeric",NA,"intakeoutputoffset","rgx_itm",NA,"Urine|URINE CATHETER","id","none","ricu","ts",0,NA
+"urine","output","mL",0,2000,"urine output",4264378,"eicu_demo_coh","intakeoutput","celllabel","cellvaluenumeric",NA,"intakeoutputoffset","rgx_exp_itm",NA,"catheter.+output|output.+catheter","regex","none","ricu","ts",0,NA
+"urine","output","mL",0,2000,"urine output",4264378,"observations","observations","variableid",NA,NA,NA,"rgx_itm","hirid_urine","30005110","id","none","ricu","ts",0,NA
+"urine","output","mL",0,2000,"urine output",4264378,"outputevents","outputevents","itemid","value","valueuom",NA,"itm_itm",NA,"226557|226558|226559|226560|226561|226563|226564|226565|226566|226567|226584|227510","id","none","ricu","ts",0,NA
+"urine","output","mL",0,2000,"urine output",4264378,"mimic_coh","outputevents","itemid","value","valueuom",NA,"itm_itm",NA,"40055|40056|40057|40065|40069|40085|40086|40094|40096|40405|40428|40473|40715|43175|226557|226558|226559|226560|226561|226563|226564|226565|226566|226567|226584|227510","id","none","ricu","ts",0,NA
+"urine","output","mL",0,2000,"urine output",4264378,"mimic_demo_coh","outputevents","itemid","value","valueuom",NA,"itm_itm",NA,"40055|40056|40057|40065|40069|40085|40086|40094|40096|40405|40428|40473|40715|43175|226557|226558|226559|226560|226561|226563|226564|226565|226566|226567|226584|227510","id","none","ricu","ts",0,NA
+"urine","output","mL",0,2000,"urine output",4264378,"data_float_h","data_float_h","DataID",NA,NA,NA,"rgx_itm",NA,"725","id","none","ricu","ts",0,NA
+"mech_vent","respiratory",NA,NA,NA,"mechanical ventilation windows",4230167,"processitems","processitems","itemid",NA,NA,NA,"rgx_itm","apply_map(c(`Beademen`              = 'invasive',
+                                     `Beademen non-invasief` = 'noninvasive',
+                                     `Tracheostoma`          = 'invasive'))","9328|10740|12635","id","none","ricu","ts",0,NA
+"mech_vent","respiratory",NA,NA,NA,"mechanical ventilation windows",4230167,"observations","observations","variableid",NA,NA,NA,"rgx_itm","combine_callbacks(hirid_vent,
+                                           apply_map(c(`1` = 'invasive',
+                                                       `2` = 'invasive',
+                                                       `3` = 'noninvasive',
+                                                       `4` = 'noninvasive',
+                                                       `5` = 'noninvasive',
+                                                       `6` = 'noninvasive')))","15001552","id","none","ricu","ts",0,NA
+"mech_vent","respiratory",NA,NA,NA,"mechanical ventilation windows",4230167,"procedureevents","procedureevents","itemid",NA,NA,NA,"itm_itm","apply_map(c(`225792` = 'invasive',
+                                     `225794` = 'noninvasive'),
+                                   var = 'sub_var')","225792|225794","id","none","ricu","ts",0,NA
+"ett_gcs","respiratory",NA,NA,NA,"tracheostomy",4097216,"listitems","listitems","itemid",NA,NA,NA,"rgx_itm","combine_callbacks(
+               transform_fun(comp_na(`==`, 'Geïntubeerd')),
+               ts_to_win_tbl(mins(1L))
+             )","6735","id","none","ricu","ts",0,NA
+"ett_gcs","respiratory",NA,NA,NA,"tracheostomy",4097216,"eicu_coh",NA,NA,NA,NA,NA,"fun_itm","combine_callbacks(
+               fwd_concept('rass'),
+               transform_fun(comp_na(`<=`, -3)),
+               ts_to_win_tbl(mins(360L))
+             )",NA,NA,"none","ricu","ts",0,NA
+"ett_gcs","respiratory",NA,NA,NA,"tracheostomy",4097216,"eicu_demo_coh",NA,NA,NA,NA,NA,"fun_itm","combine_callbacks(
+               fwd_concept('rass'),
+               transform_fun(comp_na(`<=`, -3)),
+               ts_to_win_tbl(mins(360L))
+             )",NA,NA,"none","ricu","ts",0,NA
+"ett_gcs","respiratory",NA,NA,NA,"tracheostomy",4097216,NA,NA,NA,NA,NA,NA,"fun_itm","combine_callbacks(
+               fwd_concept('mech_vent'),
+               transform_fun(comp_na(`==`, 'invasive'))
+             )",NA,NA,"none","ricu","ts",0,NA
+"ett_gcs","respiratory",NA,NA,NA,"tracheostomy",4097216,"chartevents","chartevents","value","value","valueuom","charttime","rgx_itm","combine_callbacks(
+               transform_fun(set_val(TRUE)),
+               ts_to_win_tbl(mins(1L))
+             )","No Response-ETT","id","none","ricu","ts",0,"d_items"
+"ett_gcs","respiratory",NA,NA,NA,"tracheostomy",4097216,"mimic_coh","chartevents","value","value","valueuom","charttime","rgx_itm","combine_callbacks(
+               transform_fun(set_val(TRUE)),
+               ts_to_win_tbl(mins(1L))
+             )","1.0 ET/Trach|No Response-ETT","id","none","ricu","ts",0,"d_items"
+"ett_gcs","respiratory",NA,NA,NA,"tracheostomy",4097216,"mimic_demo_coh","chartevents","value","value","valueuom","charttime","rgx_itm","combine_callbacks(
+               transform_fun(set_val(TRUE)),
+               ts_to_win_tbl(mins(1L))
+             )","1.0 ET/Trach|No Response-ETT","id","none","ricu","ts",0,"d_items"
+"rass","neurological",NA,-5,4,"Richmond agitation sedation scale",36684829,"listitems","listitems","itemid",NA,NA,NA,"rgx_itm","transform_fun(aumc_rass)","14444","id","none","ricu","ts",0,NA
+"rass","neurological",NA,-5,4,"Richmond agitation sedation scale",36684829,"eicu_coh","nursecharting","nursingchartcelltypevalname","nursingchartvalue",NA,"nursingchartoffset","rgx_itm",NA,"Sedation Score","id","none","ricu","ts",0,NA
+"rass","neurological",NA,-5,4,"Richmond agitation sedation scale",36684829,"eicu_demo_coh","nursecharting","nursingchartcelltypevalname","nursingchartvalue",NA,"nursingchartoffset","rgx_itm",NA,"Sedation Score","id","none","ricu","ts",0,NA
+"rass","neurological",NA,-5,4,"Richmond agitation sedation scale",36684829,"observations","observations","variableid",NA,NA,NA,"rgx_itm","transform_fun(floor)","15001565","id","none","ricu","ts",0,NA
+"rass","neurological",NA,-5,4,"Richmond agitation sedation scale",36684829,"chartevents","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"228096","id","none","ricu","ts",0,"d_items"
+"rass","neurological",NA,-5,4,"Richmond agitation sedation scale",36684829,"mimic_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"228096","id","none","ricu","ts",0,"d_items"
+"rass","neurological",NA,-5,4,"Richmond agitation sedation scale",36684829,"mimic_demo_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"228096","id","none","ricu","ts",0,"d_items"
+"abx","medications",NA,NA,NA,"antibiotics",4085730,"drugitems","drugitems","itemid",NA,NA,NA,"rgx_itm","transform_fun(set_val(TRUE))","2|13|19|24|28|29|57|59|82|103|240|247|333|1133|1199|1300|1371|1795|2284|2834|3237|3741|5576|6834|6847|6871|6919|6948|6953|6958|7044|7064|7185|7187|7208|7227|7235|8064|8394|8942|9029|9030|9052|9070|9117|9128|9133|9142|9151|9152|12262|12389|12398|12956|12997|13057|13094|13102|15591|18860|19137|19773|20563|23166|24241|25776|27617|29321","id","none","ricu","ts",0,NA
+"abx","medications",NA,NA,NA,"antibiotics",4085730,"eicu_coh","infusiondrug_mod","drugname","drugdosage","drugunit","drugstartoffset","rgx_exp_itm","transform_fun(set_val(TRUE))","bactrim|cipro|flagyl|metronidazole|zithromax|zosyn|(((amika|cleo|ofloxa)|(azithro|clinda|tobra|vanco)my)c|(ampi|oxa|peni|pipera)cill|cefazol|levaqu|rifamp)in","regex","none","ricu","ts",0,NA
+"abx","medications",NA,NA,NA,"antibiotics",4085730,"eicu_coh","medication_mod","drugname","drugdosage","drugunit","drugstartoffset","rgx_exp_itm","transform_fun(set_val(TRUE))","cipro|flagyl|maxipime|metronidazole|tazobactam|zosyn|cef(azolin|epime)|(((azithro|clinda|vanco)my|ofloxa|vanco)c|levaqu|piperacill|roceph)in","regex","none","ricu","ts",0,NA
+"abx","medications",NA,NA,NA,"antibiotics",4085730,"eicu_demo_coh","infusiondrug_mod","drugname","drugdosage","drugunit","drugstartoffset","rgx_exp_itm","transform_fun(set_val(TRUE))","bactrim|cipro|flagyl|metronidazole|zithromax|zosyn|(((amika|cleo|ofloxa)|(azithro|clinda|tobra|vanco)my)c|(ampi|oxa|peni|pipera)cill|cefazol|levaqu|rifamp)in","regex","none","ricu","ts",0,NA
+"abx","medications",NA,NA,NA,"antibiotics",4085730,"eicu_demo_coh","medication_mod","drugname","drugdosage","drugunit","drugstartoffset","rgx_exp_itm","transform_fun(set_val(TRUE))","cipro|flagyl|maxipime|metronidazole|tazobactam|zosyn|cef(azolin|epime)|(((azithro|clinda|vanco)my|ofloxa|vanco)c|levaqu|piperacill|roceph)in","regex","none","ricu","ts",0,NA
+"abx","medications",NA,NA,NA,"antibiotics",4085730,"pharma","pharma","pharmaid",NA,NA,NA,"rgx_itm","transform_fun(set_val(TRUE))","163|176|181|186|189|300|326|331|351|405|1000234|1000272|1000273|1000274|1000284|1000299|1000300|1000302|1000304|1000305|1000306|1000315|1000317|1000318|1000320|1000321|1000322|1000335|1000348|1000352|1000363|1000365|1000390|1000407|1000408|1000424|1000425|1000426|1000437|1000483|1000507|1000508|1000518|1000519|1000549|1000601|1000648|1000666|1000670|1000671|1000760|1000781|1000791|1000797|1000812|1000825|1000829|1000830|1000837|1000838|1000854|1000855|1000893|1000894|1001005|1001068|1001075|1001079|1001084|1001086|1001095|1001096|1001097|1001098|1001168|1001169|1001170|1001171|1001173|1001193|1001198","id","none","ricu","ts",0,NA
+"abx","medications",NA,NA,NA,"antibiotics",4085730,"prescriptions","prescriptions","drug",NA,NA,NA,"rgx_exp_itm","transform_fun(set_val(TRUE))","aztreonam|bactrim|cephalexin|chloramphenicol|cipro|flagyl|metronidazole|nitrofurantoin|tazobactam|rifampin|sulfadiazine|timentin|trimethoprim|(amika|gentami|vanco)cin|(amoxi|ampi|dicloxa|naf|oxa|peni|pipera)cillin|(azithro|clarithro|erythro|clinda|strepto|tobra|vanco)mycin|cef(azolin|tazidime|adroxil|epime|otetan|otaxime|podoxime|uroxime)|(doxy|mino|tetra)cycline|(levofl|moxifl|ofl)oxacin|macro(bid|dantin)|(una|zo)syn","regex","none","ricu","ts",0,NA
+"abx","medications",NA,NA,NA,"antibiotics",4085730,"inputevents","inputevents","itemid","amount","amountuom","starttime","itm_itm","transform_fun(set_val(TRUE))","225798|225837|225838|225840|225842|225843|225844|225845|225847|225848|225850|225851|225853|225855|225857|225859|225860|225862|225863|225865|225866|225868|225869|225871|225873|225875|225876|225877|225879|225881|225882|225883|225884|225885|225886|225888|225889|225890|225892|225893|225895|225896|225897|225898|225899|225900|225902|225903|225905|227691|228003","id","none","ricu","ts",0,"d_items"
+"abx","medications",NA,NA,NA,"antibiotics",4085730,"mimic_coh","prescriptions","drug",NA,NA,NA,"rgx_exp_itm","mimic_abx_presc","aztreonam|bactrim|cephalexin|chloramphenicol|cipro|flagyl|metronidazole|nitrofurantoin|tazobactam|rifampin|sulfadiazine|timentin|trimethoprim|(amika|gentami|vanco)cin|(amoxi|ampi|dicloxa|naf|oxa|peni|pipera)cillin|(azithro|clarithro|erythro|clinda|strepto|tobra|vanco)mycin|cef(azolin|tazidime|adroxil|epime|otetan|otaxime|podoxime|uroxime)|(doxy|mino|tetra)cycline|(levofl|moxifl|ofl)oxacin|macro(bid|dantin)|(una|zo)syn","regex","none","ricu","ts",0,NA
+"abx","medications",NA,NA,NA,"antibiotics",4085730,"mimic_coh","inputevents_mv","itemid","amount","amountuom","starttime","itm_itm","transform_fun(set_val(TRUE))","225798|225837|225838|225840|225842|225843|225844|225845|225847|225848|225850|225851|225853|225855|225857|225859|225860|225862|225863|225865|225866|225868|225869|225871|225873|225875|225876|225877|225879|225881|225882|225883|225884|225885|225886|225888|225889|225890|225892|225893|225895|225896|225897|225898|225899|225900|225902|225903|225905|227691|228003","id","none","ricu","ts",0,NA
+"abx","medications",NA,NA,NA,"antibiotics",4085730,"mimic_demo_coh","prescriptions","drug",NA,NA,NA,"rgx_exp_itm","mimic_abx_presc","aztreonam|bactrim|cephalexin|chloramphenicol|cipro|flagyl|metronidazole|nitrofurantoin|tazobactam|rifampin|sulfadiazine|timentin|trimethoprim|(amika|gentami|vanco)cin|(amoxi|ampi|dicloxa|naf|oxa|peni|pipera)cillin|(azithro|clarithro|erythro|clinda|strepto|tobra|vanco)mycin|cef(azolin|tazidime|adroxil|epime|otetan|otaxime|podoxime|uroxime)|(doxy|mino|tetra)cycline|(levofl|moxifl|ofl)oxacin|macro(bid|dantin)|(una|zo)syn","regex","none","ricu","ts",0,NA
+"abx","medications",NA,NA,NA,"antibiotics",4085730,"mimic_demo_coh","inputevents_mv","itemid","amount","amountuom","starttime","itm_itm","transform_fun(set_val(TRUE))","225798|225837|225838|225840|225842|225843|225844|225845|225847|225848|225850|225851|225853|225855|225857|225859|225860|225862|225863|225865|225866|225868|225869|225871|225873|225875|225876|225877|225879|225881|225882|225883|225884|225885|225886|225888|225889|225890|225892|225893|225895|225896|225897|225898|225899|225900|225902|225903|225905|227691|228003","id","none","ricu","ts",0,NA
+"abx","medications",NA,NA,NA,"antibiotics",4085730,"medication_mod","medication_mod","DrugID","drugdosage","drugunit","drugstartoffset","rgx_itm","transform_fun(set_val(TRUE))","1406|1408|1410|1418|1421|1422|1423|1428|1431|1433|1436|1449|1454|1457|1458|1459|1460|1461|1603|1795|1913|1927","id","none","ricu","ts",0,NA
+"samp","microbiology",NA,NA,NA,"body fluid sampling",4133843,"procedureorderitems","procedureorderitems","itemid",NA,NA,NA,"rgx_itm","transform_fun(set_val(TRUE))","8097|8418|8588|9189|9190|9191|9192|9193|9194|9195|9197|9198|9200|9202|9203|9204|9205|13024|19663|19664","id","none","ricu","ts",0,NA
+"samp","microbiology",NA,NA,NA,"body fluid sampling",4133843,"eicu_coh","microlab",NA,"organism",NA,"culturetakenoffset","col_itm","transform_fun(comp_na(`!=`, 'no growth'))",NA,NA,"none","ricu","ts",0,NA
+"samp","microbiology",NA,NA,NA,"body fluid sampling",4133843,"eicu_demo_coh","microlab",NA,"organism",NA,"culturetakenoffset","col_itm","transform_fun(comp_na(`!=`, 'no growth'))",NA,NA,"none","ricu","ts",0,NA
+"samp","microbiology",NA,NA,NA,"body fluid sampling",4133843,"microbiologyevents","microbiologyevents",NA,"org_itemid",NA,NA,"col_itm","mimic_sampling",NA,NA,"none","ricu","ts",0,NA
+"samp","microbiology",NA,NA,NA,"body fluid sampling",4133843,"mimic_coh","microbiologyevents",NA,"org_itemid",NA,NA,"col_itm","mimic_sampling",NA,NA,"none","ricu","ts",0,NA
+"samp","microbiology",NA,NA,NA,"body fluid sampling",4133843,"mimic_demo_coh","microbiologyevents",NA,"org_itemid",NA,NA,"col_itm","mimic_sampling",NA,NA,"none","ricu","ts",0,NA
+"tri","chemistry","ng/mL",0,NA,"troponin I",4007805,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"troponin - I","id","none","ricu","ts",0,NA
+"tri","chemistry","ng/mL",0,NA,"troponin I",4007805,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"troponin - I","id","none","ricu","ts",0,NA
+"tri","chemistry","ng/mL",0,NA,"troponin I",4007805,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51002","id","none","ricu","ts",0,"d_labitems"
+"tri","chemistry","ng/mL",0,NA,"troponin I",4007805,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51002","id","none","ricu","ts",0,"d_labitems"
+"tri","chemistry","ng/mL",0,NA,"troponin I",4007805,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51002","id","none","ricu","ts",0,"d_labitems"
+"tri","chemistry","ng/mL",0,NA,"troponin I",4007805,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"270","id","none","ricu","ts",0,NA
+"bili_dir","chemistry","mg/dL",0,50,"bilirubin direct",4216632,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm","convert_unit(binary_op(`*`, 0.058467), 'mg/dL')","6812","id","none","ricu","ts",0,NA
+"bili_dir","chemistry","mg/dL",0,50,"bilirubin direct",4216632,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"direct bilirubin","id","none","ricu","ts",0,NA
+"bili_dir","chemistry","mg/dL",0,50,"bilirubin direct",4216632,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"direct bilirubin","id","none","ricu","ts",0,NA
+"bili_dir","chemistry","mg/dL",0,50,"bilirubin direct",4216632,"observations","observations","variableid",NA,NA,NA,"rgx_itm","convert_unit(binary_op(`*`, 0.058467), 'mg/dL')","24000560","id","none","ricu","ts",0,NA
+"bili_dir","chemistry","mg/dL",0,50,"bilirubin direct",4216632,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50883","id","none","ricu","ts",0,"d_labitems"
+"bili_dir","chemistry","mg/dL",0,50,"bilirubin direct",4216632,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50883","id","none","ricu","ts",0,"d_labitems"
+"bili_dir","chemistry","mg/dL",0,50,"bilirubin direct",4216632,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50883","id","none","ricu","ts",0,"d_labitems"
+"bili_dir","chemistry","mg/dL",0,50,"bilirubin direct",4216632,"laboratory","laboratory","LaboratoryID",NA,NA,NA,"rgx_itm",NA,"332","id","none","ricu","ts",0,NA
+"temp","vitals","C",32,42,"temperature",4302666,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"8658|13952|16110","id","none","ricu","ts",0,NA
+"temp","vitals","C",32,42,"temperature",4302666,"eicu_coh","vitalperiodic",NA,"temperature",NA,"observationoffset","col_itm",NA,NA,NA,"none","ricu","ts",0,NA
+"temp","vitals","C",32,42,"temperature",4302666,"eicu_demo_coh","vitalperiodic",NA,"temperature",NA,"observationoffset","col_itm",NA,NA,NA,"none","ricu","ts",0,NA
+"temp","vitals","C",32,42,"temperature",4302666,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"410|400|7100","id","none","ricu","ts",0,NA
+"temp","vitals","C",32,42,"temperature",4302666,"chartevents","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"223762","id","none","ricu","ts",0,"d_items"
+"temp","vitals","C",32,42,"temperature",4302666,"chartevents","chartevents","itemid","value","valueuom","charttime","itm_itm","convert_unit(fahr_to_cels, 'C', 'f')","223761|224027","id","none","ricu","ts",0,"d_items"
+"temp","vitals","C",32,42,"temperature",4302666,"mimic_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"676|677|223762","id","none","ricu","ts",0,"d_items"
+"temp","vitals","C",32,42,"temperature",4302666,"mimic_coh","chartevents","itemid","value","valueuom","charttime","itm_itm","convert_unit(fahr_to_cels, 'C', 'f')","678|679|223761|224027","id","none","ricu","ts",0,"d_items"
+"temp","vitals","C",32,42,"temperature",4302666,"mimic_demo_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"676|677|223762","id","none","ricu","ts",0,"d_items"
+"temp","vitals","C",32,42,"temperature",4302666,"mimic_demo_coh","chartevents","itemid","value","valueuom","charttime","itm_itm","convert_unit(fahr_to_cels, 'C', 'f')","678|679|223761|224027","id","none","ricu","ts",0,"d_items"
+"temp","vitals","C",32,42,"temperature",4302666,"data_float_h","data_float_h","DataID",NA,NA,NA,"rgx_itm",NA,"709","id","none","ricu","ts",0,NA
+"etco2","vitals","mmHg",10,60,"endtidal CO2",4353940,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm","convert_unit(binary_op(`*`, 7.6), 'mmHg', 'None|Geen')","6707|8884|8885|9658|12805|12356","id","none","ricu","ts",0,NA
+"etco2","vitals","mmHg",10,60,"endtidal CO2",4353940,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"2200|8290|30010009","id","none","ricu","ts",0,NA
+"etco2","vitals","mmHg",10,60,"endtidal CO2",4353940,"chartevents","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"228640","id","none","ricu","ts",0,"d_items"
+"etco2","vitals","mmHg",10,60,"endtidal CO2",4353940,"mimic_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"1817|228640","id","none","ricu","ts",0,"d_items"
+"etco2","vitals","mmHg",10,60,"endtidal CO2",4353940,"mimic_demo_coh","chartevents","itemid","value","valueuom","charttime","itm_itm",NA,"1817|228640","id","none","ricu","ts",0,"d_items"
+"ins","medications","units/hr",0,NA,"insulin",42537007,"drugitems","drugitems","itemid",NA,NA,NA,"rgx_itm",NA,"7624|9014|19129","id","none","ricu","ts",0,NA
+"ins","medications","units/hr",0,NA,"insulin",42537007,"eicu_coh","infusiondrug_mod","drugname","drugdosage","drugunit","drugstartoffset","rgx_exp_itm",NA,"^insulin (250.+)?\(((ml|units)/hr)?\)$","regex","none","ricu","ts",0,NA
+"ins","medications","units/hr",0,NA,"insulin",42537007,"eicu_demo_coh","infusiondrug_mod","drugname","drugdosage","drugunit","drugstartoffset","rgx_exp_itm",NA,"^insulin (250.+)?\(((ml|units)/hr)?\)$","regex","none","ricu","ts",0,NA
+"ins","medications","units/hr",0,NA,"insulin",42537007,"pharma","pharma","pharmaid",NA,NA,NA,"rgx_itm","aggregate_fun('sum', 'units')","15|1000724","id","none","ricu","ts",0,NA
+"ins","medications","units/hr",0,NA,"insulin",42537007,"inputevents","inputevents","itemid","amount","amountuom","starttime","itm_itm","distribute_amount","223258|223260","id","none","ricu","ts",0,"d_items"
+"ins","medications","units/hr",0,NA,"insulin",42537007,"mimic_coh","inputevents_cv","itemid","amount","amountuom","charttime","itm_itm",NA,"30045|30100","id","none","ricu","ts",0,NA
+"ins","medications","units/hr",0,NA,"insulin",42537007,"mimic_coh","inputevents_mv","itemid","amount","amountuom","starttime","itm_itm","distribute_amount","223258|223260","id","none","ricu","ts",0,NA
+"ins","medications","units/hr",0,NA,"insulin",42537007,"mimic_demo_coh","inputevents_cv","itemid","amount","amountuom","charttime","itm_itm",NA,"30045|30100","id","none","ricu","ts",0,NA
+"ins","medications","units/hr",0,NA,"insulin",42537007,"mimic_demo_coh","inputevents_mv","itemid","amount","amountuom","starttime","itm_itm","distribute_amount","223258|223260","id","none","ricu","ts",0,NA
+"bnd","hematology","%",NA,NA,"band form neutrophils",4100147,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"6796|11586","id","none","ricu","ts",0,NA
+"bnd","hematology","%",NA,NA,"band form neutrophils",4100147,"eicu_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"-bands","id","none","ricu","ts",0,NA
+"bnd","hematology","%",NA,NA,"band form neutrophils",4100147,"eicu_demo_coh","lab","labname","labresult",NA,"labresultoffset","rgx_itm",NA,"-bands","id","none","ricu","ts",0,NA
+"bnd","hematology","%",NA,NA,"band form neutrophils",4100147,"observations","observations","variableid",NA,NA,NA,"rgx_itm",NA,"24000557","id","none","ricu","ts",0,NA
+"bnd","hematology","%",NA,NA,"band form neutrophils",4100147,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51144","id","none","ricu","ts",0,"d_labitems"
+"bnd","hematology","%",NA,NA,"band form neutrophils",4100147,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51144","id","none","ricu","ts",0,"d_labitems"
+"bnd","hematology","%",NA,NA,"band form neutrophils",4100147,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"51144","id","none","ricu","ts",0,"d_labitems"
+"hba1c","hematology","%",NA,NA,"Hemoglobin A1C",4184637,"numericitems","numericitems","itemid",NA,NA,NA,"rgx_itm",NA,"11812|16166","id","none","ricu","ts",0,NA
+"hba1c","hematology","%",NA,NA,"Hemoglobin A1C",4184637,"labevents","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50852","id","none","ricu","ts",0,"d_labitems"
+"hba1c","hematology","%",NA,NA,"Hemoglobin A1C",4184637,"mimic_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50852","id","none","ricu","ts",0,"d_labitems"
+"hba1c","hematology","%",NA,NA,"Hemoglobin A1C",4184637,"mimic_demo_coh","labevents","itemid","value","valueuom","charttime","itm_itm",NA,"50852","id","none","ricu","ts",0,"d_labitems"
+"cort","medications",NA,NA,NA,"corticosteroids",304275008,"drugitems","drugitems","itemid",NA,NA,NA,"rgx_itm","transform_fun(set_val(TRUE))","6922|6995|7106|8132|9042|9130|10628","id","none","ricu","ts",0,NA
+"cort","medications",NA,NA,NA,"corticosteroids",304275008,"pharma","pharma","pharmaid",NA,NA,NA,"rgx_itm","transform_fun(set_val(TRUE))","146|151|1000325|1000383|1000431|1000432|1000433|1000434|1000435|1000486|1000487|1000488|1000769|1000770|1000929","id","none","ricu","ts",0,NA
+"dex","medications","ml/hr",0,NA,"dextrose (as D10)",4197597,"drugitems","drugitems","itemid",NA,NA,NA,"rgx_itm","combine_callbacks(
+                           aumc_rate,
+                           dex_to_10(list(7255L, 7256L, c(8940L, 9571L)),
+                                     c(2, 3, 4))
+                         )","7254|7255|7256|8940|9571","id","none","ricu","ts",0,NA
+"dex","medications","ml/hr",0,NA,"dextrose (as D10)",4197597,"eicu_coh","medication_mod","drugname","drugdosage","drugunit","drugstartoffset","rgx_exp_itm","eicu_dex_med","(d50|dextrose.+50 ?%)","regex","none","ricu","ts",0,NA
+"dex","medications","ml/hr",0,NA,"dextrose (as D10)",4197597,"eicu_coh","infusiondrug_mod","drugname","drugdosage","drugunit","drugstartoffset","rgx_exp_itm","eicu_dex_inf","(d10|dextrose.+10 ?%).+ml/hr","regex","none","ricu","ts",0,NA
+"dex","medications","ml/hr",0,NA,"dextrose (as D10)",4197597,"eicu_demo_coh","medication_mod","drugname","drugdosage","drugunit","drugstartoffset","rgx_exp_itm","eicu_dex_med","(d50|dextrose.+50 ?%)","regex","none","ricu","ts",0,NA
+"dex","medications","ml/hr",0,NA,"dextrose (as D10)",4197597,"eicu_demo_coh","infusiondrug_mod","drugname","drugdosage","drugunit","drugstartoffset","rgx_exp_itm","eicu_dex_inf","(d10|dextrose.+10 ?%).+ml/hr","regex","none","ricu","ts",0,NA
+"dex","medications","ml/hr",0,NA,"dextrose (as D10)",4197597,"pharma","pharma","pharmaid",NA,NA,NA,"rgx_itm","combine_callbacks(
+               grp_mount_to_rate(mins(1L), hours(1L)),
+               dex_to_10(list(c(1000689L, 1000544L, 1000746L, 1000835L),
+                                1000060L, 1000545L, 1000567L), c(2, 3, 4, 5))
+             )","1000022|1000690|1000689|1000544|1000746|1000835|1000060|1000545|1000567","id","none","ricu","ts",0,NA
+"dex","medications","ml/hr",0,NA,"dextrose (as D10)",4197597,"inputevents","inputevents","itemid","amount","amountuom","starttime","itm_itm","combine_callbacks(
+               mimv_rate,
+               dex_to_10(c(228140L, 220952L), c(2, 5))
+             )","220950|228140|220952","id","none","ricu","ts",0,"d_items"
+"dex","medications","ml/hr",0,NA,"dextrose (as D10)",4197597,"mimic_coh","inputevents_mv","itemid","amount","amountuom","starttime","itm_itm","combine_callbacks(
+               mimv_rate,
+               dex_to_10(c(228140L, 220952L), c(2, 5))
+             )","220950|228140|220952","id","none","ricu","ts",0,NA
+"dex","medications","ml/hr",0,NA,"dextrose (as D10)",4197597,"mimic_coh","inputevents_cv","itemid","amount","amountuom","charttime","itm_itm","combine_callbacks(
+               grp_mount_to_rate(mins(1L), hours(1L)),
+               dex_to_10(30017L, 2)
+             )","30016|30017","id","none","ricu","ts",0,NA
+"dex","medications","ml/hr",0,NA,"dextrose (as D10)",4197597,"mimic_demo_coh","inputevents_mv","itemid","amount","amountuom","starttime","itm_itm","combine_callbacks(
+               mimv_rate,
+               dex_to_10(c(228140L, 220952L), c(2, 5))
+             )","220950|228140|220952","id","none","ricu","ts",0,NA
+"dex","medications","ml/hr",0,NA,"dextrose (as D10)",4197597,"mimic_demo_coh","inputevents_cv","itemid","amount","amountuom","charttime","itm_itm","combine_callbacks(
+               grp_mount_to_rate(mins(1L), hours(1L)),
+               dex_to_10(30017L, 2)
+             )","30016|30017","id","none","ricu","ts",0,NA
