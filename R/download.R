@@ -197,7 +197,7 @@ download_check_data <- function(dest_folder, files, url, src,
 #' @export
 download_data <- function(src_name, tables, data_dir,
                           config_path = system.file("config", "data-sources.json",
-                                                    package = "sci_ehr")) {
+                                                    package = "sciehr")) {
   src_cfg     <- load_src_config(config_path, src_name)
   base_url    <- src_cfg$url
   tables_json <- src_cfg$tables

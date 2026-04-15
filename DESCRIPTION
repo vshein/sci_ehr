@@ -1,4 +1,4 @@
-Package: sci_ehr
+Package: sciehr
 Type: Package
 Title: Bridge ICU Electronic Health Records for Spinal Cord Injury Research
 Version: 0.1.0

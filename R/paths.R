@@ -17,7 +17,7 @@
 #' @export
 make_project_paths <- function(base_dir, src_name,
                                concept_config_name = "concept_config.csv") {
-  pkg      <- "sci_ehr"
+  pkg      <- "sciehr"
   pkg_sql  <- system.file("sql", src_name, package = pkg)
   pkg_cfg  <- system.file("config",        package = pkg)
 

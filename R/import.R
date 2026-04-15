@@ -258,7 +258,7 @@ import_table <- function(table_name, tbl_json, data_dir, chunk_length = 10^7) {
 #' @export
 import_data <- function(src_name, tables, data_dir,
                         config_path = system.file("config", "data-sources.json",
-                                                  package = "sci_ehr"),
+                                                  package = "sciehr"),
                         chunk_length = 10^7) {
   src_cfg     <- load_src_config(config_path, src_name)
   tables_json <- src_cfg$tables

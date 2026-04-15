@@ -75,7 +75,7 @@ devtools::install_github("vshein/sci_ehr")
 # Or from local source (development)
 devtools::load_all("/path/to/sci_ehr")
 
-library(sci_ehr)
+library(sciehr)
 ```
 
 **Dependencies** are installed automatically: `DBI`, `RPostgres`, `dplyr`,
